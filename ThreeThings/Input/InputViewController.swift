@@ -140,7 +140,7 @@ class InputViewController: UIViewController {
                 return self.inputTextView.sizeThatFits(CGSize(width: self.inputTextView.size.width, height: CGFloat.infinity)).height
             }
             .bindNext { [unowned self] height in
-                self.heightConstraint.constant = height
+                self.heightConstraint.constant = height + 8
                 
                 let offsetSize = self.textScrollView.contentSize.height - self.textScrollView.bounds.height
                 if (offsetSize > 0) {

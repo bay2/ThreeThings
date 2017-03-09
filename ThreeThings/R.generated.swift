@@ -11,7 +11,7 @@ import UIKit
 /// This `R` struct is generated and contains references to static resources.
 struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap(Locale.init) ?? Locale.current
-  fileprivate static let hostingBundle = Bundle(identifier: "com.simcai.ThreeThings") ?? Bundle.main
+  fileprivate static let hostingBundle = Bundle(identifier: "com.simcai.ThreeThings.beta") ?? Bundle.main
   
   static func validate() throws {
     try font.validate()
@@ -104,10 +104,10 @@ struct R: Rswift.Validatable {
     static let launch = Rswift.ImageResource(bundle: R.hostingBundle, name: "Launch")
     /// Image `back`.
     static let back = Rswift.ImageResource(bundle: R.hostingBundle, name: "back")
-    /// Image `home`.
-    static let home = Rswift.ImageResource(bundle: R.hostingBundle, name: "home")
     /// Image `menu`.
     static let menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "menu")
+    /// Image `save`.
+    static let save = Rswift.ImageResource(bundle: R.hostingBundle, name: "save")
     /// Image `share`.
     static let share = Rswift.ImageResource(bundle: R.hostingBundle, name: "share")
     /// Image `wechat_session`.
@@ -135,14 +135,14 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.back, compatibleWith: traitCollection)
     }
     
-    /// `UIImage(named: "home", bundle: ..., traitCollection: ...)`
-    static func home(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.home, compatibleWith: traitCollection)
-    }
-    
     /// `UIImage(named: "menu", bundle: ..., traitCollection: ...)`
     static func menu(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.menu, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "save", bundle: ..., traitCollection: ...)`
+    static func save(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.save, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "share", bundle: ..., traitCollection: ...)`
@@ -388,8 +388,8 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "back") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'back' is used in storyboard 'Share', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "save") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'save' is used in storyboard 'Share', but couldn't be loaded.") }
         if UIKit.UIImage(named: "share") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'share' is used in storyboard 'Share', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "home") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'home' is used in storyboard 'Share', but couldn't be loaded.") }
         if _R.storyboard.share().shareModelViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'shareModelViewController' could not be loaded from storyboard 'Share' as 'ShareModelViewController'.") }
         if _R.storyboard.share().shareViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'shareViewController' could not be loaded from storyboard 'Share' as 'ShareViewController'.") }
       }

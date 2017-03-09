@@ -65,7 +65,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-RU-SpF">
                                 <rect key="frame" x="125" y="0.0" width="125" height="70"/>
-                                <state key="normal" image="home"/>
+                                <state key="normal" image="save"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNp-Lk-c87">
                                 <rect key="frame" x="250" y="0.0" width="125" height="70"/>
@@ -115,7 +115,7 @@
     </scenes>
     <resources>
         <image name="back" width="37" height="40"/>
-        <image name="home" width="42" height="40"/>
+        <image name="save" width="37" height="36"/>
         <image name="share" width="48" height="40"/>
     </resources>
 </document>
