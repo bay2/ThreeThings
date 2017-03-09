@@ -1,4 +1,0 @@
-github "ReXSwift/ReX" "1.0.0-rc.2"
-github "ReactiveX/RxSwift" ~> 3.0
-github "jdg/MBProgressHUD" ~> 1.0
-github "mac-cain13/R.swift.Library" ~> 3.0.2
