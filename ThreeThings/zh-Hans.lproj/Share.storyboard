@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g9f-MP-pKc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="Bxk-Wh-IrP">
+            <objects>
+                <viewController storyboardIdentifier="ShareViewController" id="g9f-MP-pKc" customClass="ShareViewController" customModule="ThreeThings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TaK-4Z-QCo"/>
+                        <viewControllerLayoutGuide type="bottom" id="5m3-wc-SAc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w8O-UM-qql">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urI-RH-CGD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="urI-RH-CGD" secondAttribute="trailing" id="7RD-UJ-24I"/>
+                            <constraint firstItem="urI-RH-CGD" firstAttribute="leading" secondItem="w8O-UM-qql" secondAttribute="leading" id="NZR-5k-XrY"/>
+                            <constraint firstItem="5m3-wc-SAc" firstAttribute="top" secondItem="urI-RH-CGD" secondAttribute="bottom" id="cXD-Dd-Eqb"/>
+                            <constraint firstItem="urI-RH-CGD" firstAttribute="top" secondItem="w8O-UM-qql" secondAttribute="top" id="w4b-1W-cqk"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iTE-DP-Pxk" appends="YES" id="Q1y-st-N6W"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="tapWebView" destination="iTE-DP-Pxk" id="bfN-Ni-kcD"/>
+                        <outlet property="webView" destination="urI-RH-CGD" id="3rd-Bl-3el"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U24-9Y-OZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iTE-DP-Pxk"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="-299"/>
+        </scene>
+        <!--Share Model View Controller-->
+        <scene sceneID="UbU-fJ-RJh">
+            <objects>
+                <viewController storyboardIdentifier="ShareModelViewController" id="Zbo-7f-WuD" customClass="ShareModelViewController" customModule="ThreeThings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQY-fO-aha"/>
+                        <viewControllerLayoutGuide type="bottom" id="RDq-WX-Xc6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f0n-Jk-Acw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HI2-M3-32p">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="70"/>
+                                <state key="normal" image="back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-RU-SpF">
+                                <rect key="frame" x="125" y="0.0" width="125" height="70"/>
+                                <state key="normal" image="home"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNp-Lk-c87">
+                                <rect key="frame" x="250" y="0.0" width="125" height="70"/>
+                                <state key="normal" image="share"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HI2-M3-32p" firstAttribute="leading" secondItem="f0n-Jk-Acw" secondAttribute="leading" id="7yj-7H-HRV"/>
+                            <constraint firstItem="RDq-WX-Xc6" firstAttribute="top" secondItem="HI2-M3-32p" secondAttribute="bottom" id="BdD-jK-5Ly"/>
+                            <constraint firstItem="RDq-WX-Xc6" firstAttribute="top" secondItem="NNp-Lk-c87" secondAttribute="bottom" id="ELt-yt-Kaa"/>
+                            <constraint firstItem="HI2-M3-32p" firstAttribute="top" secondItem="pQY-fO-aha" secondAttribute="bottom" id="Hk9-aC-gn3"/>
+                            <constraint firstAttribute="trailing" secondItem="NNp-Lk-c87" secondAttribute="trailing" id="R7A-bf-VjF"/>
+                            <constraint firstItem="NNp-Lk-c87" firstAttribute="top" secondItem="pQY-fO-aha" secondAttribute="bottom" id="UeU-TX-Q5s"/>
+                            <constraint firstItem="FC9-RU-SpF" firstAttribute="top" secondItem="pQY-fO-aha" secondAttribute="bottom" id="WJ6-16-Bfs"/>
+                            <constraint firstItem="FC9-RU-SpF" firstAttribute="leading" secondItem="HI2-M3-32p" secondAttribute="trailing" id="XtC-FN-H0L"/>
+                            <constraint firstItem="FC9-RU-SpF" firstAttribute="width" secondItem="HI2-M3-32p" secondAttribute="width" id="a2N-Uo-daQ"/>
+                            <constraint firstItem="NNp-Lk-c87" firstAttribute="leading" secondItem="FC9-RU-SpF" secondAttribute="trailing" id="dAA-n9-qQ2"/>
+                            <constraint firstItem="NNp-Lk-c87" firstAttribute="leading" secondItem="FC9-RU-SpF" secondAttribute="trailing" id="hSO-Mh-nSb"/>
+                            <constraint firstItem="FC9-RU-SpF" firstAttribute="leading" secondItem="HI2-M3-32p" secondAttribute="trailing" id="kAk-gt-1Sx"/>
+                            <constraint firstItem="RDq-WX-Xc6" firstAttribute="top" secondItem="FC9-RU-SpF" secondAttribute="bottom" id="mV8-yV-Pgf"/>
+                            <constraint firstItem="NNp-Lk-c87" firstAttribute="width" secondItem="HI2-M3-32p" secondAttribute="width" id="r3q-m4-NvP"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="70"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_modalWidth" value="full"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_modalHeight" value="custom(70)"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_modalPosition" value="bottomCenter"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_presentationAnimationType" value="cover(bottom)"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="opacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="backBtn" destination="HI2-M3-32p" id="7WW-jC-Ifa"/>
+                        <outlet property="homeBtn" destination="FC9-RU-SpF" id="nzW-wr-fon"/>
+                        <outlet property="shareBtn" destination="NNp-Lk-c87" id="TCb-Jg-ZBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="peD-M4-ZLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.200000000000003" y="-282.4587706146927"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="37" height="40"/>
+        <image name="home" width="42" height="40"/>
+        <image name="share" width="48" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ncp-CS-DAQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Input View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="InputViewController" id="BYZ-38-t0r" customClass="InputViewController" customModule="ThreeThings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ⅰ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-HQ-5nq">
+                                <rect key="frame" x="0.0" y="40" width="375" height="81"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="64"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dA1-Dp-kxa" customClass="AnimatableTextView" customModule="IBAnimatable">
+                                <rect key="frame" x="15" y="121" width="345" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="DFKaiShu-SB-Estd-BF" family="BiauKai" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="写下您今天的第一件事..."/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.80784313725490198" green="0.83921568627450982" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRT-4N-dqG">
+                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAb-XM-M7w" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="322" y="5" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Aye-wS-ISF"/>
+                                            <constraint firstAttribute="width" constant="38" id="I9g-iF-hHf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" red="0.29019607843137252" green="0.29803921568627451" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_maskType" value="circle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/01/28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cl-eD-5u6">
+                                        <rect key="frame" x="15" y="16" width="73" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.29019607843137252" green="0.29803921568627451" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQF-2J-jw5" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="264" y="5" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="9Dn-fd-rGp"/>
+                                            <constraint firstAttribute="width" constant="38" id="YzG-Ay-tgp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Last">
+                                            <color key="titleColor" red="0.2901960784" green="0.29803921570000003" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_maskType" value="circle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5cl-eD-5u6" firstAttribute="centerY" secondItem="mRT-4N-dqG" secondAttribute="centerY" id="IOq-Ss-my7"/>
+                                    <constraint firstItem="bAb-XM-M7w" firstAttribute="top" secondItem="mRT-4N-dqG" secondAttribute="top" constant="5" id="OZw-Pa-wYy"/>
+                                    <constraint firstAttribute="trailing" secondItem="bAb-XM-M7w" secondAttribute="trailing" constant="15" id="TbN-BW-6zy"/>
+                                    <constraint firstItem="bAb-XM-M7w" firstAttribute="top" secondItem="eQF-2J-jw5" secondAttribute="top" id="V6t-Gd-dLA"/>
+                                    <constraint firstAttribute="bottom" secondItem="bAb-XM-M7w" secondAttribute="bottom" constant="5" id="jy7-aN-7zU"/>
+                                    <constraint firstItem="5cl-eD-5u6" firstAttribute="leading" secondItem="mRT-4N-dqG" secondAttribute="leading" constant="15" id="o23-VS-BTC"/>
+                                    <constraint firstItem="bAb-XM-M7w" firstAttribute="leading" secondItem="eQF-2J-jw5" secondAttribute="trailing" constant="20" id="xJx-ar-1Mr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OIh-HQ-5nq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7H4-hP-b6p"/>
+                            <constraint firstAttribute="trailing" secondItem="OIh-HQ-5nq" secondAttribute="trailing" id="FgD-p6-kMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="dA1-Dp-kxa" secondAttribute="trailing" constant="15" id="Jdj-Gb-VHW"/>
+                            <constraint firstItem="OIh-HQ-5nq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MVo-VF-s9E"/>
+                            <constraint firstItem="dA1-Dp-kxa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="adQ-Hg-Ato"/>
+                            <constraint firstItem="OIh-HQ-5nq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="bmU-J3-Nd7"/>
+                            <constraint firstAttribute="trailing" secondItem="mRT-4N-dqG" secondAttribute="trailing" id="cIv-l8-lv5"/>
+                            <constraint firstItem="dA1-Dp-kxa" firstAttribute="top" secondItem="OIh-HQ-5nq" secondAttribute="bottom" id="e8v-1V-n83"/>
+                            <constraint firstItem="mRT-4N-dqG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kXd-jR-zAE"/>
+                            <constraint firstItem="mRT-4N-dqG" firstAttribute="top" secondItem="dA1-Dp-kxa" secondAttribute="bottom" id="nSk-ce-wS7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mRT-4N-dqG" secondAttribute="bottom" id="onP-xH-0P6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MV1-is-yFH"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_transitionAnimationType" value="Fade(In)"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="transitionDuration">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dateLab" destination="5cl-eD-5u6" id="KxQ-gM-Ip7"/>
+                        <outlet property="inputTextView" destination="dA1-Dp-kxa" id="BnY-Nc-5wK"/>
+                        <outlet property="lastBtn" destination="eQF-2J-jw5" id="vZs-o6-8na"/>
+                        <outlet property="nextBtn" destination="bAb-XM-M7w" id="YML-lp-JkA"/>
+                        <outlet property="titleLab" destination="OIh-HQ-5nq" id="Osx-ZL-Rbn"/>
+                        <outlet property="toolbarBottom" destination="onP-xH-0P6" id="HZG-0R-MSA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Animatable Navigation Controller-->
+        <scene sceneID="edU-GY-R0h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ncp-CS-DAQ" customClass="AnimatableNavigationController" customModule="IBAnimatable" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" misplaced="YES" id="LVg-mt-HNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_transitionAnimationType" value="Slide(Left)"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="transitionDuration">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8zt-xm-2DM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a57-NM-Geo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>

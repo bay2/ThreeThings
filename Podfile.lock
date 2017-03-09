@@ -1,0 +1,21 @@
+PODS:
+  - FSCalendar (2.7.2)
+  - IBAnimatable (3.1.2)
+  - RealmThreeThings (0.0.1)
+  - ThreeThingsPods (0.1.0)
+
+DEPENDENCIES:
+  - FSCalendar (~> 2.7.1)
+  - IBAnimatable (~> 3.1.1)
+  - RealmThreeThings
+  - ThreeThingsPods (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  FSCalendar: 6200ef796dfe85005ff2fb19bbd429f8be742f86
+  IBAnimatable: 26b74a72df9369d40faab97428477c246b9e42ba
+  RealmThreeThings: 06ba211d590cb6faeb7f90ce5b0deee915977251
+  ThreeThingsPods: db0e5c0817e275eeb2f170b4eb6581375df0d06b
+
+PODFILE CHECKSUM: 78021104ba42a17ac9d3115ff50a1744d446cf55
+
+COCOAPODS: 1.2.0
