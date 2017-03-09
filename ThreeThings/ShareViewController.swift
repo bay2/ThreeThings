@@ -106,6 +106,7 @@ class ShareViewController: UIViewController, UIGestureRecognizerDelegate {
         let bindTapShare: (ShareModelViewController) -> Void = { [unowned self] modelVC in
             
             modelVC.tapShare
+                .flatMap(self.inputStore.dispatch.save)
                 .map { [unowned self] _ in self.webView }
                 .map(self.makeImage)
                 .map { image in (modelVC, image) }
@@ -126,8 +127,6 @@ class ShareViewController: UIViewController, UIGestureRecognizerDelegate {
             bindTapBack(modelVC)
             bindTapHome(modelVC)
             bindTapShare(modelVC)
-            
-            
             
         }
         
