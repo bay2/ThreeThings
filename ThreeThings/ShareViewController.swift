@@ -74,8 +74,11 @@ class ShareViewController: UIViewController, UIGestureRecognizerDelegate {
         reloadHTML()
         
         webView.scrollView.showsVerticalScrollIndicator = false
+        webView.scrollView.bouncesZoom = false
         webView.addGestureRecognizer(tapWebView)
         tapWebView.delegate = self
+        
+        
         
         
         

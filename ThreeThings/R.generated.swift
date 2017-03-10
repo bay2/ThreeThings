@@ -168,10 +168,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `HomeThingTableViewCell`.
     static let homeThingTableViewCell: Rswift.ReuseIdentifier<HomeThingTableViewCell> = Rswift.ReuseIdentifier(identifier: "HomeThingTableViewCell")
+    /// Reuse identifier `LicenseTableViewCell`.
+    static let licenseTableViewCell: Rswift.ReuseIdentifier<LicenseTableViewCell> = Rswift.ReuseIdentifier(identifier: "LicenseTableViewCell")
     /// Reuse identifier `MenuTableViewCell`.
     static let menuTableViewCell: Rswift.ReuseIdentifier<MenuTableViewCell> = Rswift.ReuseIdentifier(identifier: "MenuTableViewCell")
     /// Reuse identifier `SettingTableViewCell`.
@@ -185,7 +187,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 6 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
   struct storyboard {
     /// Storyboard `Home`.
     static let home = _R.storyboard.home()
@@ -195,6 +197,8 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Launch`.
     static let launch = _R.storyboard.launch()
+    /// Storyboard `License`.
+    static let license = _R.storyboard.license()
     /// Storyboard `Setting`.
     static let setting = _R.storyboard.setting()
     /// Storyboard `Share`.
@@ -218,6 +222,11 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
+    }
+    
+    /// `UIStoryboard(name: "License", bundle: ...)`
+    static func license(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.license)
     }
     
     /// `UIStoryboard(name: "Setting", bundle: ...)`
@@ -260,11 +269,12 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
-      try setting.validate()
-      try input.validate()
-      try home.validate()
       try launch.validate()
       try share.validate()
+      try setting.validate()
+      try license.validate()
+      try home.validate()
+      try input.validate()
       try launchScreen.validate()
     }
     
@@ -343,6 +353,34 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "Launch") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Launch' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct license: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let licenseNavgationController = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "LicenseNavgationController")
+      let licenseViewController = StoryboardViewControllerResource<LicenseViewController>(identifier: "LicenseViewController")
+      let licenseWebViewController = StoryboardViewControllerResource<LicenseWebViewController>(identifier: "LicenseWebViewController")
+      let name = "License"
+      
+      func licenseNavgationController(_: Void = ()) -> UIKit.UINavigationController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: licenseNavgationController)
+      }
+      
+      func licenseViewController(_: Void = ()) -> LicenseViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: licenseViewController)
+      }
+      
+      func licenseWebViewController(_: Void = ()) -> LicenseWebViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: licenseWebViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.license().licenseNavgationController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'licenseNavgationController' could not be loaded from storyboard 'License' as 'UIKit.UINavigationController'.") }
+        if _R.storyboard.license().licenseViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'licenseViewController' could not be loaded from storyboard 'License' as 'LicenseViewController'.") }
+        if _R.storyboard.license().licenseWebViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'licenseWebViewController' could not be loaded from storyboard 'License' as 'LicenseWebViewController'.") }
       }
       
       fileprivate init() {}

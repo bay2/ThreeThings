@@ -21,6 +21,11 @@
 		91311B171E703C7700AE0393 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91311B161E703C7600AE0393 /* LocalAuthentication.framework */; };
 		91311B191E703F2B00AE0393 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91311B181E703F2B00AE0393 /* Launch.storyboard */; };
 		91311B1B1E703F6E00AE0393 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B1A1E703F6E00AE0393 /* LaunchViewController.swift */; };
+		91311B201E72D61200AE0393 /* License.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91311B1F1E72D61200AE0393 /* License.storyboard */; };
+		91311B221E72D6CF00AE0393 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B211E72D6CF00AE0393 /* LicenseViewController.swift */; };
+		91311B241E72D72700AE0393 /* LicenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B231E72D72700AE0393 /* LicenseItem.swift */; };
+		91311B291E72DD1600AE0393 /* LicenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */; };
+		91311B2B1E72E7F200AE0393 /* LicenseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */; };
 		91314E801E56759E00582C00 /* LaunchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E7F1E56759E00582C00 /* LaunchStore.swift */; };
 		91314E821E587F6E00582C00 /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E811E587F6E00582C00 /* HomeStore.swift */; };
 		91314E841E58826C00582C00 /* ThingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E831E58826C00582C00 /* ThingItem.swift */; };
@@ -63,6 +68,11 @@
 		91311B161E703C7600AE0393 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		91311B181E703F2B00AE0393 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		91311B1A1E703F6E00AE0393 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		91311B1F1E72D61200AE0393 /* License.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = License.storyboard; sourceTree = "<group>"; };
+		91311B211E72D6CF00AE0393 /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
+		91311B231E72D72700AE0393 /* LicenseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseItem.swift; sourceTree = "<group>"; };
+		91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseTableViewCell.swift; sourceTree = "<group>"; };
+		91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseWebViewController.swift; sourceTree = "<group>"; };
 		91314E7F1E56759E00582C00 /* LaunchStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchStore.swift; path = Home/LaunchStore.swift; sourceTree = "<group>"; };
 		91314E811E587F6E00582C00 /* HomeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
 		91314E831E58826C00582C00 /* ThingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingItem.swift; sourceTree = "<group>"; };
@@ -148,6 +158,18 @@
 			name = Launch;
 			sourceTree = "<group>";
 		};
+		91311B1E1E72D5D600AE0393 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				91311B1F1E72D61200AE0393 /* License.storyboard */,
+				91311B211E72D6CF00AE0393 /* LicenseViewController.swift */,
+				91311B231E72D72700AE0393 /* LicenseItem.swift */,
+				91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */,
+				91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */,
+			);
+			name = License;
+			sourceTree = "<group>";
+		};
 		91C3BC4B1E3B81D100D41E3C = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +192,7 @@
 		91C3BC561E3B81D100D41E3C /* ThreeThings */ = {
 			isa = PBXGroup;
 			children = (
+				91311B1E1E72D5D600AE0393 /* License */,
 				91311B1C1E703FD000AE0393 /* Launch */,
 				91311B091E6EF0C600AE0393 /* Setting */,
 				910D0C1C1E60217400605488 /* Share */,
@@ -325,6 +348,7 @@
 				91C3BC621E3B81D100D41E3C /* LaunchScreen.storyboard in Resources */,
 				91C3BC5F1E3B81D100D41E3C /* Assets.xcassets in Resources */,
 				91C3BC5D1E3B81D100D41E3C /* Input.storyboard in Resources */,
+				91311B201E72D61200AE0393 /* License.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,16 +435,20 @@
 				91C3BC581E3B81D100D41E3C /* AppDelegate.swift in Sources */,
 				91311B111E6EFEB800AE0393 /* SettingItem.swift in Sources */,
 				91311B131E702AD200AE0393 /* UserDefaults.swift in Sources */,
+				91311B241E72D72700AE0393 /* LicenseItem.swift in Sources */,
 				914701631E6D8F8A006A9ECA /* MenuViewController.swift in Sources */,
 				91311B1B1E703F6E00AE0393 /* LaunchViewController.swift in Sources */,
 				91314E801E56759E00582C00 /* LaunchStore.swift in Sources */,
 				91311B151E70333F00AE0393 /* TableViewCell+Rx.swift in Sources */,
 				91C3BCB41E4040C100D41E3C /* ThreeThingsModel.swift in Sources */,
+				91311B221E72D6CF00AE0393 /* LicenseViewController.swift in Sources */,
+				91311B2B1E72E7F200AE0393 /* LicenseWebViewController.swift in Sources */,
 				914701651E6D8FBF006A9ECA /* MenuTableViewCell.swift in Sources */,
 				91F101421E56712F00A9063D /* HomeViewController.swift in Sources */,
 				91F100B51E5049DE00A9063D /* RxAnimatableTextView.swift in Sources */,
 				91314E861E58919D00582C00 /* HomeThingTableViewCell.swift in Sources */,
 				914701671E6D96BD006A9ECA /* MenuItem.swift in Sources */,
+				91311B291E72DD1600AE0393 /* LicenseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +590,7 @@
 				INFOPLIST_FILE = ThreeThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
@@ -582,7 +610,7 @@
 				INFOPLIST_FILE = ThreeThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;

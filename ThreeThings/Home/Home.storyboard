@@ -144,7 +144,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8d-AH-QfV">
-                                <rect key="frame" x="320" y="612" width="40" height="40"/>
+                                <rect key="frame" x="310" y="602" width="50" height="50"/>
                                 <state key="normal" image="menu"/>
                                 <connections>
                                     <segue destination="y0t-NO-kJ2" kind="custom" customClass="PresentFadeSegue" customModule="IBAnimatable" id="eNF-Zb-0IH"/>
@@ -312,7 +312,7 @@
     </scenes>
     <resources>
         <image name="Close" width="25" height="25"/>
-        <image name="menu" width="40" height="40"/>
+        <image name="menu" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yOs-R7-X4k"/>

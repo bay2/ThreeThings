@@ -16,7 +16,7 @@ class SettingViewController: UIViewController {
     fileprivate let disposeBag = DisposeBag()
     
     @IBOutlet weak var tableView: UITableView!
-    lazy var dataSource: RxTableViewSectionedReloadDataSource<SettingSection> = {
+    fileprivate lazy var dataSource: RxTableViewSectionedReloadDataSource<SettingSection> = {
        return RxTableViewSectionedReloadDataSource<SettingSection>()
     }()
 

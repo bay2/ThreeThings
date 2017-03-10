@@ -35,7 +35,10 @@ class MenuViewController: AnimatableViewController {
                     guard let vc = R.storyboard.setting.settingNavgationController() else { fatalError("settingViewController is nil") }
                     self.presentVC(vc)
                 }),
-                .TitleSectionItem(title: "开源许可", click: { print("开源许可") }),
+                .TitleSectionItem(title: "开源许可", click: { [unowned self] in
+                    guard let vc = R.storyboard.license.licenseNavgationController() else { fatalError("settingViewController is nil") }
+                    self.presentVC(vc)
+                }),
                 .TitleSectionItem(title: "意见反馈", click: { print("意见反馈") })
                 ])
         ]

@@ -156,12 +156,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="MV1-is-yFH"/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="_transitionAnimationType" value="Fade(In)"/>
-                        <userDefinedRuntimeAttribute type="number" keyPath="transitionDuration">
-                            <real key="value" value="0.29999999999999999"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="dateLab" destination="5cl-eD-5u6" id="KxQ-gM-Ip7"/>
                         <outlet property="heightConstraint" destination="WWI-2N-8V7" id="B8k-eN-iUv"/>
