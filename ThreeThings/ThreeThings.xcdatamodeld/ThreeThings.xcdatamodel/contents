@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ThreeThings" representedClassName=".ThreeThings" syncable="YES">
+        <attribute name="firstThing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFinish" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="secondThing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="threeThing" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="writeDate" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ThreeThings" positionX="-45" positionY="0" width="128" height="120"/>
+    </elements>
+</model>

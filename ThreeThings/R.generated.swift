@@ -14,7 +14,6 @@ struct R: Rswift.Validatable {
   fileprivate static let hostingBundle = Bundle(identifier: "com.simcai.ThreeThings.beta") ?? Bundle.main
   
   static func validate() throws {
-    try font.validate()
     try intern.validate()
   }
   
@@ -77,20 +76,8 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.font` struct is generated, and contains static references to 1 fonts.
-  struct font: Rswift.Validatable {
-    /// Font `HYc1gj`.
-    static let hYc1gj = Rswift.FontResource(fontName: "HYc1gj")
-    
-    /// `UIFont(name: "HYc1gj", size: ...)`
-    static func hYc1gj(size: CGFloat) -> UIKit.UIFont? {
-      return UIKit.UIFont(resource: hYc1gj, size: size)
-    }
-    
-    static func validate() throws {
-      if R.font.hYc1gj(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'HYc1gj' could not be loaded, is 'kai.ttf' added to the UIAppFonts array in this targets Info.plist?") }
-    }
-    
+  /// This `R.font` struct is generated, and contains static references to 0 fonts.
+  struct font {
     fileprivate init() {}
   }
   

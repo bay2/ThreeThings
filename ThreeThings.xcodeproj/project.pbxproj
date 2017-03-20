@@ -26,6 +26,10 @@
 		91311B241E72D72700AE0393 /* LicenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B231E72D72700AE0393 /* LicenseItem.swift */; };
 		91311B291E72DD1600AE0393 /* LicenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */; };
 		91311B2B1E72E7F200AE0393 /* LicenseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */; };
+		91311B681E76D9F200AE0393 /* ThreeThings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91311B661E76D9F200AE0393 /* ThreeThings.xcdatamodeld */; };
+		91311B6B1E76DB3200AE0393 /* ThreeThings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B691E76DB3200AE0393 /* ThreeThings+CoreDataClass.swift */; };
+		91311B6C1E76DB3200AE0393 /* ThreeThings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B6A1E76DB3200AE0393 /* ThreeThings+CoreDataProperties.swift */; };
+		91311B6F1E7AD3A000AE0393 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B6E1E7AD3A000AE0393 /* DataAccess.swift */; };
 		91314E801E56759E00582C00 /* LaunchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E7F1E56759E00582C00 /* LaunchStore.swift */; };
 		91314E821E587F6E00582C00 /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E811E587F6E00582C00 /* HomeStore.swift */; };
 		91314E841E58826C00582C00 /* ThingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E831E58826C00582C00 /* ThingItem.swift */; };
@@ -73,6 +77,11 @@
 		91311B231E72D72700AE0393 /* LicenseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseItem.swift; sourceTree = "<group>"; };
 		91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseTableViewCell.swift; sourceTree = "<group>"; };
 		91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseWebViewController.swift; sourceTree = "<group>"; };
+		91311B671E76D9F200AE0393 /* ThreeThings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThreeThings.xcdatamodel; sourceTree = "<group>"; };
+		91311B691E76DB3200AE0393 /* ThreeThings+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThreeThings+CoreDataClass.swift"; sourceTree = "<group>"; };
+		91311B6A1E76DB3200AE0393 /* ThreeThings+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThreeThings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		91311B6D1E7ABB6C00AE0393 /* ThreeThings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThreeThings.entitlements; sourceTree = "<group>"; };
+		91311B6E1E7AD3A000AE0393 /* DataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		91314E7F1E56759E00582C00 /* LaunchStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchStore.swift; path = Home/LaunchStore.swift; sourceTree = "<group>"; };
 		91314E811E587F6E00582C00 /* HomeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
 		91314E831E58826C00582C00 /* ThingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingItem.swift; sourceTree = "<group>"; };
@@ -192,6 +201,10 @@
 		91C3BC561E3B81D100D41E3C /* ThreeThings */ = {
 			isa = PBXGroup;
 			children = (
+				91311B6D1E7ABB6C00AE0393 /* ThreeThings.entitlements */,
+				91311B691E76DB3200AE0393 /* ThreeThings+CoreDataClass.swift */,
+				91311B661E76D9F200AE0393 /* ThreeThings.xcdatamodeld */,
+				91311B6A1E76DB3200AE0393 /* ThreeThings+CoreDataProperties.swift */,
 				91311B1E1E72D5D600AE0393 /* License */,
 				91311B1C1E703FD000AE0393 /* Launch */,
 				91311B091E6EF0C600AE0393 /* Setting */,
@@ -211,6 +224,7 @@
 				914701521E67943B006A9ECA /* ThreeThingsBridgingHeader.h */,
 				91311B121E702AD200AE0393 /* UserDefaults.swift */,
 				91311B141E70333F00AE0393 /* TableViewCell+Rx.swift */,
+				91311B6E1E7AD3A000AE0393 /* DataAccess.swift */,
 			);
 			path = ThreeThings;
 			sourceTree = "<group>";
@@ -313,6 +327,17 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 46P362TLB2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -433,12 +458,16 @@
 				910D0C221E646E0600605488 /* ShareModelViewController.swift in Sources */,
 				91C3BCD01E416D7700D41E3C /* R.generated.swift in Sources */,
 				91C3BC581E3B81D100D41E3C /* AppDelegate.swift in Sources */,
+				91311B6F1E7AD3A000AE0393 /* DataAccess.swift in Sources */,
+				91311B6B1E76DB3200AE0393 /* ThreeThings+CoreDataClass.swift in Sources */,
 				91311B111E6EFEB800AE0393 /* SettingItem.swift in Sources */,
+				91311B6C1E76DB3200AE0393 /* ThreeThings+CoreDataProperties.swift in Sources */,
 				91311B131E702AD200AE0393 /* UserDefaults.swift in Sources */,
 				91311B241E72D72700AE0393 /* LicenseItem.swift in Sources */,
 				914701631E6D8F8A006A9ECA /* MenuViewController.swift in Sources */,
 				91311B1B1E703F6E00AE0393 /* LaunchViewController.swift in Sources */,
 				91314E801E56759E00582C00 /* LaunchStore.swift in Sources */,
+				91311B681E76D9F200AE0393 /* ThreeThings.xcdatamodeld in Sources */,
 				91311B151E70333F00AE0393 /* TableViewCell+Rx.swift in Sources */,
 				91C3BCB41E4040C100D41E3C /* ThreeThingsModel.swift in Sources */,
 				91311B221E72D6CF00AE0393 /* LicenseViewController.swift in Sources */,
@@ -582,6 +611,7 @@
 			baseConfigurationReference = 4B537C3CCF80069477858840 /* Pods-ThreeThings.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeThings/ThreeThings.entitlements;
 				DEVELOPMENT_TEAM = 46P362TLB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +620,7 @@
 				INFOPLIST_FILE = ThreeThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -602,6 +633,7 @@
 			baseConfigurationReference = 8B72589F828D075C538C7DFA /* Pods-ThreeThings.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeThings/ThreeThings.entitlements;
 				DEVELOPMENT_TEAM = 46P362TLB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -610,6 +642,7 @@
 				INFOPLIST_FILE = ThreeThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -debug-time-function-bodies";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -639,6 +672,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		91311B661E76D9F200AE0393 /* ThreeThings.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91311B671E76D9F200AE0393 /* ThreeThings.xcdatamodel */,
+			);
+			currentVersion = 91311B671E76D9F200AE0393 /* ThreeThings.xcdatamodel */;
+			path = ThreeThings.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 91C3BC4C1E3B81D100D41E3C /* Project object */;
 }

@@ -17,7 +17,7 @@ import MonkeyKing
 class ShareViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var webView: UIWebView!
-    var thingsModel: ThreeThingsModel!
+    var thingsModel: ThreeThings!
     
     @IBOutlet var tapWebView: UITapGestureRecognizer!
     
@@ -143,10 +143,12 @@ class ShareViewController: UIViewController, UIGestureRecognizerDelegate {
         let htmlPath = Bundle.main.path(forResource: "Template", ofType: "html") ?? ""
         var htmlCont = try! String(contentsOf: URL(fileURLWithPath: htmlPath))
         
-        htmlCont = htmlCont.replacingOccurrences(of: "#thingDate#", with: thingsModel.writeDate.replacingOccurrences(of: "-", with: "."))
-        htmlCont = htmlCont.replacingOccurrences(of: "#firstThing#", with: thingsModel.firstThing)
-        htmlCont = htmlCont.replacingOccurrences(of: "#secondThing#", with: thingsModel.secondThing)
-        htmlCont = htmlCont.replacingOccurrences(of: "#threeThing#", with: thingsModel.threeThing)
+        let wirteDate = thingsModel.writeDate as! Date
+        
+        htmlCont = htmlCont.replacingOccurrences(of: "#thingDate#", with: wirteDate.toString(format: "yyyy.MM.dd"))
+        htmlCont = htmlCont.replacingOccurrences(of: "#firstThing#", with: thingsModel.firstThing ?? "")
+        htmlCont = htmlCont.replacingOccurrences(of: "#secondThing#", with: thingsModel.secondThing ?? "")
+        htmlCont = htmlCont.replacingOccurrences(of: "#threeThing#", with: thingsModel.threeThing ?? "")
         
         webView.loadHTMLString(htmlCont, baseURL: nil)
         

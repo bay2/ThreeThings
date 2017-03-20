@@ -7,28 +7,17 @@
 //
 
 import RxSwift
-import RealmSwift
 import ReX
 import Foundation
+import Datez
 
-extension Array where Element : RealmSwift.Object {
-    init(_ results: Results<Element>) {
-        
-        self = [Element]()
-        
-        for result in results {
-            self.append(result)
-        }
-        
-    }
-}
 
 class HomeStore: ReX.StoreType {
     
     class State {
         
         let selectDate = Variable<Date>(Date())
-        let thingsList = Variable<Results<ThreeThingsModel>>(realm.objects(ThreeThingsModel.self).filter("isFinish == %@", true))
+        let thingsList = Variable(ThreeThings.fetchFinishData())
     
     }
     
@@ -41,23 +30,29 @@ extension ReX.Getter where Store: HomeStore {
     var thingsList: Observable<[ThingItem]>  {
         return store.state.selectDate.asObservable()
             .map { [unowned store = self.store] date in
-                store.state.thingsList.value.filter("writeDate == %@", date.toString(format: "yyyy-MM-dd")).first
+                return store.state.thingsList.value.filter { (things) -> Bool in
+                    let date = things.writeDate as! Date
+                    return date.isToday
+                }
+                .first
             }
             .map { (model) -> [ThingItem] in
                 guard let model = model else {
                     return []
                 }
                 
-                return [ThingItem(model.writeDate + "#1", thing: model.firstThing),
-                        ThingItem(model.writeDate + "#2", thing: model.secondThing),
-                        ThingItem(model.writeDate + "#3", thing: model.threeThing)]
+                let dateString = (model.writeDate as! Date).toString(format: "yyyy-MM-dd")
+                
+                return [ThingItem(dateString + "#1", thing: model.firstThing ?? ""),
+                        ThingItem(dateString + "#2", thing: model.secondThing ?? ""),
+                        ThingItem(dateString + "#3", thing: model.threeThing ?? "")]
             }
     }
     
     var thingsDateList: Observable<[Date]> {
         return store.state.thingsList.asObservable().map { results in
             return Array(results).map { model in
-                Date(fromString: model.writeDate, format: "yyyy-MM-dd")!
+                model.writeDate as! Date
             }
         }
     }

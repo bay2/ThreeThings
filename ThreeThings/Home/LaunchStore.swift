@@ -8,8 +8,9 @@
 
 import ReX
 import RxSwift
-import RealmSwift
 import UIKit
+import CoreData
+import Datez
 
 enum LaunchPageType {
     case input, home
@@ -19,7 +20,12 @@ class LaunchStore: ReX.StoreType {
     
     class State {
         
-        let pageInfo = Variable<ThreeThingsModel?>(realm.objects(ThreeThingsModel.self).filter("writeDate == %@", Date().toString(format: "yyyy-MM-dd")).first)
+        lazy var pageInfo: Variable<ThreeThings?> = {
+            
+            let model = ThreeThings.fetchTodayData()
+            return Variable(model)
+                        
+        }()
         
     }
     

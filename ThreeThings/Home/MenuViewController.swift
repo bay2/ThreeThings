@@ -30,7 +30,6 @@ class MenuViewController: AnimatableViewController {
         
         let sections: [MenuSection] = [
             .TitleSection(items: [
-                .TitleSectionItem(title: "清理缓存", click: { print("清理缓存") }),
                 .TitleSectionItem(title: "设置", click: { [unowned self] in
                     guard let vc = R.storyboard.setting.settingNavgationController() else { fatalError("settingViewController is nil") }
                     self.presentVC(vc)

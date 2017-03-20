@@ -12,6 +12,7 @@ import RxSwift
 import FSCalendar
 import EZSwiftExtensions
 import IBAnimatable
+import Datez
 
 typealias ThingSectionModel = AnimatableSectionModel<String, ThingItem>
 class HomeViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
@@ -57,9 +58,6 @@ class HomeViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
         
         calendar.dataSource = self
         calendar.delegate = self
-        
-        
-        
 
     }
 
@@ -100,7 +98,7 @@ class HomeViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     
     func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
         
-        return dateList.filter { $0 == date }.count
+        return dateList.filter { $0.gregorian.components.day == date.gregorian.components.day }.count
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventDefaultColorsFor date: Date) -> [UIColor]? {

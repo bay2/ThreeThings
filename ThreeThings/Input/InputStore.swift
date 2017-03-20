@@ -10,6 +10,7 @@ import ReX
 import RxSwift
 import RealmSwift
 import Foundation
+import CoreData
 
 enum InputViewCtrlState {
     case next, last, done, save
@@ -19,11 +20,19 @@ class InputStore: ReX.StoreType {
     
     class State {
         
-        let pageInfo = Variable<ThreeThingsModel>(realm.objects(ThreeThingsModel.self).filter("writeDate == %@", Date().toString(format: "yyyy-MM-dd")).first ?? ThreeThingsModel())
+        let pageInfo: Variable<ThreeThings>
         let currentPageIndex: Variable<Int>
         
         init(_ index: Int) {
+            
             self.currentPageIndex = Variable<Int>(index)
+            
+            ThreeThings.addTodayData { (threeThings) in
+                threeThings.writeDate = NSDate()
+            }
+            
+            self.pageInfo = Variable(ThreeThings.fetchTodayData()!)
+            
         }
    
     }
@@ -57,11 +66,11 @@ extension ReX.Getter where Store: InputStore {
         return store.getter.currentPageIndex.map { [unowned store = self.store] index -> String in
             switch index {
             case 0:
-                return store.state.pageInfo.value.firstThing
+                return store.state.pageInfo.value.firstThing ?? ""
             case 1:
-                return store.state.pageInfo.value.secondThing
+                return store.state.pageInfo.value.secondThing ?? ""
             case 2:
-                return store.state.pageInfo.value.threeThing
+                return store.state.pageInfo.value.threeThing ?? ""
             default:
                 return ""
             }
@@ -76,23 +85,19 @@ extension ReX.Mutation where Store: InputStore {
     
     var saveIndex: (Int, String) -> (Void)  {
         
-        return { [unowned store = self.store] index, description in
+        return {  index, description in
             
-            let pageInfo = store.state.pageInfo.value
-            
-            try! realm.write {
-                
+            ThreeThings.addTodayData { things in
                 switch index {
                 case 0:
-                    pageInfo.firstThing = description
+                    things.firstThing = description
                 case 1:
-                    pageInfo.secondThing = description
+                    things.secondThing = description
                 case 2:
-                    pageInfo.threeThing = description
+                    things.threeThing = description
                 default:
                     break
                 }
-                realm.add(pageInfo, update: true)
             }
 
         }
@@ -100,15 +105,12 @@ extension ReX.Mutation where Store: InputStore {
     
     var save: (Void) -> (Void)  {
         
-        return { [unowned store = self.store] in
+        return {
             
-            let pageInfo = store.state.pageInfo.value
-            
-            try! realm.write {
-                pageInfo.isFinish = true
-                realm.add(pageInfo, update: true)
+            ThreeThings.addTodayData { things in
+                things.isFinish = true
             }
-            
+
         }
     }
 
@@ -146,7 +148,7 @@ extension ReX.Action where Store: InputStore {
         
     }
     
-    var done: (String) -> Observable<ThreeThingsModel> {
+    var done: (String) -> Observable<ThreeThings> {
         
         return { [unowned store = self.store]  description in
             
