@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HYc1gj.ttf">
+            <string>HYc1gj</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Downloadi Cloud Data View Controller-->
+        <scene sceneID="ayO-Mu-oda">
+            <objects>
+                <viewController storyboardIdentifier="DownloadiCloudDataViewController" id="9yA-Ff-9W4" customClass="DownloadiCloudDataViewController" customModule="ThreeThings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nPZ-gc-V8K"/>
+                        <viewControllerLayoutGuide type="bottom" id="6NM-gg-d83"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="djL-3v-DPa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1O-iu-N2T">
+                                <rect key="frame" x="30" y="100" width="315" height="305"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否从 iCloud 中导入数据？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV9-Mo-db5">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="68"/>
+                                        <fontDescription key="fontDescription" name="HYc1gj" family="HYKaiTiJ" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yt-Q9-EsG">
+                                        <rect key="frame" x="142.5" y="269" width="30" height="36"/>
+                                        <fontDescription key="fontDescription" name="HYc1gj" family="HYKaiTiJ" pointSize="24"/>
+                                        <state key="normal" title="否"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akk-Dr-fRp">
+                                        <rect key="frame" x="142.5" y="218" width="30" height="36"/>
+                                        <fontDescription key="fontDescription" name="HYc1gj" family="HYKaiTiJ" pointSize="24"/>
+                                        <state key="normal" title="是"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="akk-Dr-fRp" firstAttribute="centerX" secondItem="i1O-iu-N2T" secondAttribute="centerX" id="4CP-iZ-0EB"/>
+                                    <constraint firstItem="2Yt-Q9-EsG" firstAttribute="centerX" secondItem="akk-Dr-fRp" secondAttribute="centerX" id="4E2-mZ-WDA"/>
+                                    <constraint firstItem="2Yt-Q9-EsG" firstAttribute="top" secondItem="akk-Dr-fRp" secondAttribute="bottom" constant="15" id="6c2-Iv-bR1"/>
+                                    <constraint firstAttribute="trailing" secondItem="TV9-Mo-db5" secondAttribute="trailing" id="87R-cH-LyD"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Yt-Q9-EsG" secondAttribute="bottom" id="Bp6-xq-6lJ"/>
+                                    <constraint firstItem="akk-Dr-fRp" firstAttribute="top" secondItem="TV9-Mo-db5" secondAttribute="bottom" constant="150" id="EAy-5A-9EI"/>
+                                    <constraint firstItem="TV9-Mo-db5" firstAttribute="top" secondItem="i1O-iu-N2T" secondAttribute="top" id="VOJ-td-VDx"/>
+                                    <constraint firstItem="TV9-Mo-db5" firstAttribute="leading" secondItem="i1O-iu-N2T" secondAttribute="leading" id="Zs6-0T-gYC"/>
+                                    <constraint firstItem="TV9-Mo-db5" firstAttribute="centerX" secondItem="i1O-iu-N2T" secondAttribute="centerX" id="muO-x4-IRX"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKL-ZP-Smd">
+                                <rect key="frame" x="30" y="100" width="315" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i你 iPhone 的 Cloud Drive 功能没打开。你可以在「设置 - iCloud - iCloud Drive」选择打开" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHu-Zw-F5q">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="115"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AHu-Zw-F5q" firstAttribute="top" secondItem="HKL-ZP-Smd" secondAttribute="top" id="Zad-7f-HLP"/>
+                                    <constraint firstItem="AHu-Zw-F5q" firstAttribute="leading" secondItem="HKL-ZP-Smd" secondAttribute="leading" id="jhO-hR-hxc"/>
+                                    <constraint firstAttribute="trailing" secondItem="AHu-Zw-F5q" secondAttribute="trailing" id="km3-3w-0SH"/>
+                                    <constraint firstAttribute="bottom" secondItem="AHu-Zw-F5q" secondAttribute="bottom" constant="10" id="nEf-LA-bHZ"/>
+                                    <constraint firstItem="AHu-Zw-F5q" firstAttribute="centerX" secondItem="HKL-ZP-Smd" secondAttribute="centerX" id="qNn-z0-761"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g85-19-BI9">
+                                <rect key="frame" x="172" y="537" width="31" height="30"/>
+                                <state key="normal" title="跳过"/>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wm2-O7-Nob">
+                                <rect key="frame" x="30" y="205.5" width="315" height="57.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCloud 上不存在对应的数据文件" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eF-xX-92s">
+                                        <rect key="frame" x="0.0" y="0.5" width="315" height="57.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3eF-xX-92s" secondAttribute="trailing" id="6id-1g-MLF"/>
+                                    <constraint firstAttribute="bottom" secondItem="3eF-xX-92s" secondAttribute="bottom" id="GP8-O7-OBg"/>
+                                    <constraint firstItem="3eF-xX-92s" firstAttribute="top" secondItem="wm2-O7-Nob" secondAttribute="top" id="Idu-HE-c5a"/>
+                                    <constraint firstItem="3eF-xX-92s" firstAttribute="leading" secondItem="wm2-O7-Nob" secondAttribute="leading" id="IvF-In-nzg"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSI-kF-0qU">
+                                <rect key="frame" x="30" y="192.5" width="315" height="149"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数据加载中，请等待..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFB-JS-PXB">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vTq-FJ-3PU">
+                                        <rect key="frame" x="147.5" y="79" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZFB-JS-PXB" firstAttribute="centerX" secondItem="lSI-kF-0qU" secondAttribute="centerX" id="6yd-F6-si5"/>
+                                    <constraint firstAttribute="bottom" secondItem="vTq-FJ-3PU" secondAttribute="bottom" constant="50" id="7hL-17-Owc"/>
+                                    <constraint firstItem="vTq-FJ-3PU" firstAttribute="top" secondItem="ZFB-JS-PXB" secondAttribute="bottom" constant="50" id="Kf8-Pv-MSL"/>
+                                    <constraint firstItem="ZFB-JS-PXB" firstAttribute="top" secondItem="lSI-kF-0qU" secondAttribute="top" id="ne6-pQ-zog"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZFB-JS-PXB" secondAttribute="trailing" id="qYW-Xs-i3L"/>
+                                    <constraint firstItem="ZFB-JS-PXB" firstAttribute="leading" secondItem="lSI-kF-0qU" secondAttribute="leading" id="sE1-Nf-b4T"/>
+                                    <constraint firstItem="vTq-FJ-3PU" firstAttribute="centerX" secondItem="lSI-kF-0qU" secondAttribute="centerX" id="uPv-WJ-VFy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wm2-O7-Nob" firstAttribute="leading" secondItem="djL-3v-DPa" secondAttribute="leading" constant="30" id="1dH-DH-toO"/>
+                            <constraint firstItem="lSI-kF-0qU" firstAttribute="leading" secondItem="djL-3v-DPa" secondAttribute="leading" constant="30" id="3d5-Js-05b"/>
+                            <constraint firstItem="HKL-ZP-Smd" firstAttribute="leading" secondItem="djL-3v-DPa" secondAttribute="leading" constant="30" id="GKC-UD-UUB"/>
+                            <constraint firstItem="wm2-O7-Nob" firstAttribute="centerX" secondItem="djL-3v-DPa" secondAttribute="centerX" id="GPp-5s-Zvo"/>
+                            <constraint firstItem="HKL-ZP-Smd" firstAttribute="top" secondItem="djL-3v-DPa" secondAttribute="top" constant="100" id="Gts-t4-o1W"/>
+                            <constraint firstAttribute="trailing" secondItem="HKL-ZP-Smd" secondAttribute="trailing" constant="30" id="Ilb-eQ-e2e"/>
+                            <constraint firstItem="i1O-iu-N2T" firstAttribute="leading" secondItem="djL-3v-DPa" secondAttribute="leading" constant="30" id="MYC-92-rer"/>
+                            <constraint firstAttribute="trailing" secondItem="lSI-kF-0qU" secondAttribute="trailing" constant="30" id="WLe-ai-S5j"/>
+                            <constraint firstAttribute="trailing" secondItem="wm2-O7-Nob" secondAttribute="trailing" constant="30" id="ZWX-NG-IoZ"/>
+                            <constraint firstItem="lSI-kF-0qU" firstAttribute="centerY" secondItem="djL-3v-DPa" secondAttribute="centerY" multiplier="0.8" id="g9Z-7w-GMN"/>
+                            <constraint firstItem="i1O-iu-N2T" firstAttribute="top" secondItem="djL-3v-DPa" secondAttribute="top" constant="100" id="itW-kC-C8b"/>
+                            <constraint firstItem="g85-19-BI9" firstAttribute="centerX" secondItem="djL-3v-DPa" secondAttribute="centerX" id="mFs-6N-x2R"/>
+                            <constraint firstItem="wm2-O7-Nob" firstAttribute="centerY" secondItem="djL-3v-DPa" secondAttribute="centerY" multiplier="0.7" id="o43-bc-686"/>
+                            <constraint firstAttribute="trailing" secondItem="i1O-iu-N2T" secondAttribute="trailing" constant="30" id="oGP-Cv-pmE"/>
+                            <constraint firstItem="6NM-gg-d83" firstAttribute="top" secondItem="g85-19-BI9" secondAttribute="bottom" constant="100" id="wOt-PQ-vZ1"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="activityView" destination="vTq-FJ-3PU" id="spi-PJ-IrF"/>
+                        <outlet property="deniedView" destination="HKL-ZP-Smd" id="Ny6-iY-Mft"/>
+                        <outlet property="fileNotExistView" destination="wm2-O7-Nob" id="3Z7-MO-GuT"/>
+                        <outlet property="importView" destination="i1O-iu-N2T" id="x0x-cc-PeL"/>
+                        <outlet property="loadingView" destination="lSI-kF-0qU" id="HJb-mj-XCW"/>
+                        <outlet property="noBtn" destination="2Yt-Q9-EsG" id="zRz-E6-SNZ"/>
+                        <outlet property="skipBtn" destination="g85-19-BI9" id="qR4-Tl-FSx"/>
+                        <outlet property="yesBtn" destination="akk-Dr-fRp" id="6d0-eC-pdF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gde-uN-nLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-456.80000000000001" y="201.04947526236884"/>
+        </scene>
+    </scenes>
+</document>

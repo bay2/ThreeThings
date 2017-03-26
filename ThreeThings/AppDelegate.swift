@@ -12,7 +12,7 @@ import RealmSwift
 import MonkeyKing
 import LocalAuthentication
 
-let realm = try! Realm()
+var realm: Realm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        print("\(realm.configuration)")  
+//        var realmConfig = Realm.Configuration()
+//        realmConfig.fileURL = realmConfig.fileURL?.deletingLastPathComponent().appendingPathComponent("aaa.realm")
+//        
+//        Realm.Configuration.defaultConfiguration = realmConfig
+//        
+//        realm = try! Realm()
+        
+        print("\(realm.configuration.fileURL)")
+        
+        
         
         return true
     }

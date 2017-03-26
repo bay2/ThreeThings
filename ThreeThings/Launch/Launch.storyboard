@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="isN-9Y-bdF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="DLz-Ll-TRI">
+            <objects>
+                <viewController storyboardIdentifier="LaunchViewController" id="DT8-bp-Hl3" customClass="LaunchViewController" customModule="ThreeThings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NwJ-rO-r3J"/>
+                        <viewControllerLayoutGuide type="bottom" id="iAM-Lb-1tR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="79a-48-il9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="udt-sc-EQD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ytz-Om-1Xk" appends="YES" id="cKo-FC-eZ4"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="udt-sc-EQD" secondAttribute="trailing" id="DLx-CT-auR"/>
+                            <constraint firstItem="udt-sc-EQD" firstAttribute="leading" secondItem="79a-48-il9" secondAttribute="leading" id="Opw-iZ-JS9"/>
+                            <constraint firstAttribute="bottom" secondItem="udt-sc-EQD" secondAttribute="bottom" id="f0i-eV-CpR"/>
+                            <constraint firstItem="udt-sc-EQD" firstAttribute="top" secondItem="NwJ-rO-r3J" secondAttribute="bottom" id="jww-4d-JYg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gcS-Fd-nzS"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tapLaunchPage" destination="Ytz-Om-1Xk" id="Ini-6C-kqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSQ-Fk-z4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ytz-Om-1Xk"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="289.20539730134936"/>
+        </scene>
+        <!--Animatable Navigation Controller-->
+        <scene sceneID="uZj-aF-VF7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezd-MY-LPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="isN-9Y-bdF" customClass="AnimatableNavigationController" customModule="IBAnimatable" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="udU-9J-mzG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="_transitionAnimationType" value="Slide(Left)"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="transitionDuration">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="DT8-bp-Hl3" kind="relationship" relationship="rootViewController" id="xYR-ot-DAw"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="255" y="289"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Launch" width="375" height="667"/>
+    </resources>
+</document>

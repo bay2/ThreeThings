@@ -47,18 +47,42 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 6 files.
   struct file {
+    /// Resource file `HYc1gj.ttf`.
+    static let hYc1gjTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "HYc1gj", pathExtension: "ttf")
     /// Resource file `Home.clr`.
     static let homeClr = Rswift.FileResource(bundle: R.hostingBundle, name: "Home", pathExtension: "clr")
+    /// Resource file `NilData.realm`.
+    static let nilDataRealm = Rswift.FileResource(bundle: R.hostingBundle, name: "NilData", pathExtension: "realm")
+    /// Resource file `OneData.realm`.
+    static let oneDataRealm = Rswift.FileResource(bundle: R.hostingBundle, name: "OneData", pathExtension: "realm")
     /// Resource file `Template.html`.
     static let templateHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "Template", pathExtension: "html")
-    /// Resource file `kai.ttf`.
-    static let kaiTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "kai", pathExtension: "ttf")
+    /// Resource file `UnfinishedData.realm`.
+    static let unfinishedDataRealm = Rswift.FileResource(bundle: R.hostingBundle, name: "UnfinishedData", pathExtension: "realm")
+    
+    /// `bundle.url(forResource: "HYc1gj", withExtension: "ttf")`
+    static func hYc1gjTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.hYc1gjTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
     
     /// `bundle.url(forResource: "Home", withExtension: "clr")`
     static func homeClr(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.homeClr
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "NilData", withExtension: "realm")`
+    static func nilDataRealm(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.nilDataRealm
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "OneData", withExtension: "realm")`
+    static func oneDataRealm(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.oneDataRealm
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -68,9 +92,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
-    /// `bundle.url(forResource: "kai", withExtension: "ttf")`
-    static func kaiTtf(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.kaiTtf
+    /// `bundle.url(forResource: "UnfinishedData", withExtension: "realm")`
+    static func unfinishedDataRealm(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.unfinishedDataRealm
       return fileResource.bundle.url(forResource: fileResource)
     }
     
@@ -88,7 +112,7 @@ struct R: Rswift.Validatable {
     }
     
     static func validate() throws {
-      if R.font.hYc1gj(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'HYc1gj' could not be loaded, is 'kai.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.hYc1gj(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'HYc1gj' could not be loaded, is 'HYc1gj.ttf' added to the UIAppFonts array in this targets Info.plist?") }
     }
     
     fileprivate init() {}
@@ -168,7 +192,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 5 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `HomeThingTableViewCell`.
     static let homeThingTableViewCell: Rswift.ReuseIdentifier<HomeThingTableViewCell> = Rswift.ReuseIdentifier(identifier: "HomeThingTableViewCell")
@@ -176,8 +200,10 @@ struct R: Rswift.Validatable {
     static let licenseTableViewCell: Rswift.ReuseIdentifier<LicenseTableViewCell> = Rswift.ReuseIdentifier(identifier: "LicenseTableViewCell")
     /// Reuse identifier `MenuTableViewCell`.
     static let menuTableViewCell: Rswift.ReuseIdentifier<MenuTableViewCell> = Rswift.ReuseIdentifier(identifier: "MenuTableViewCell")
-    /// Reuse identifier `SettingTableViewCell`.
-    static let settingTableViewCell: Rswift.ReuseIdentifier<SettingTableViewCell> = Rswift.ReuseIdentifier(identifier: "SettingTableViewCell")
+    /// Reuse identifier `SettingSwitchTableViewCell`.
+    static let settingSwitchTableViewCell: Rswift.ReuseIdentifier<SettingSwitchTableViewCell> = Rswift.ReuseIdentifier(identifier: "SettingSwitchTableViewCell")
+    /// Reuse identifier `SettingTitleTableViewCell`.
+    static let settingTitleTableViewCell: Rswift.ReuseIdentifier<SettingTitleTableViewCell> = Rswift.ReuseIdentifier(identifier: "SettingTitleTableViewCell")
     
     fileprivate init() {}
   }
@@ -187,7 +213,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 8 storyboards.
   struct storyboard {
     /// Storyboard `Home`.
     static let home = _R.storyboard.home()
@@ -203,6 +229,8 @@ struct R: Rswift.Validatable {
     static let setting = _R.storyboard.setting()
     /// Storyboard `Share`.
     static let share = _R.storyboard.share()
+    /// Storyboard `iCloud`.
+    static let iCloud = _R.storyboard.iCloud()
     
     /// `UIStoryboard(name: "Home", bundle: ...)`
     static func home(_: Void = ()) -> UIKit.UIStoryboard {
@@ -239,6 +267,11 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.share)
     }
     
+    /// `UIStoryboard(name: "iCloud", bundle: ...)`
+    static func iCloud(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.iCloud)
+    }
+    
     fileprivate init() {}
   }
   
@@ -269,13 +302,14 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
+      try launchScreen.validate()
       try launch.validate()
       try share.validate()
       try setting.validate()
       try license.validate()
       try home.validate()
       try input.validate()
-      try launchScreen.validate()
+      try iCloud.validate()
     }
     
     struct home: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -305,6 +339,22 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.home().homeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewController' could not be loaded from storyboard 'Home' as 'HomeViewController'.") }
         if _R.storyboard.home().menuViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'menuViewController' could not be loaded from storyboard 'Home' as 'MenuViewController'.") }
         if _R.storyboard.home().homeNavigationController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeNavigationController' could not be loaded from storyboard 'Home' as 'UIKit.UINavigationController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct iCloud: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let downloadiCloudDataViewController = StoryboardViewControllerResource<DownloadiCloudDataViewController>(identifier: "DownloadiCloudDataViewController")
+      let name = "iCloud"
+      
+      func downloadiCloudDataViewController(_: Void = ()) -> DownloadiCloudDataViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: downloadiCloudDataViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.iCloud().downloadiCloudDataViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'downloadiCloudDataViewController' could not be loaded from storyboard 'iCloud' as 'DownloadiCloudDataViewController'.") }
       }
       
       fileprivate init() {}

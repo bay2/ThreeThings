@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D6EBCC44D6CCB00A253650A /* Pods_ThreeThings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCB4EAE370C0B3D51FD5201 /* Pods_ThreeThings.framework */; };
+		029A6AB2F9F8FD123BD03566 /* Pods_ThreeThings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F5A1DB784443629AB8CF73 /* Pods_ThreeThings.framework */; };
 		910B9A781E5DE14E00D59B15 /* Home.clr in Resources */ = {isa = PBXBuildFile; fileRef = 910B9A771E5DE14E00D59B15 /* Home.clr */; };
 		910D0C1B1E60204400605488 /* Template.html in Resources */ = {isa = PBXBuildFile; fileRef = 910D0C1A1E60204400605488 /* Template.html */; };
 		910D0C201E60223B00605488 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910D0C1F1E60223B00605488 /* ShareViewController.swift */; };
@@ -37,25 +37,102 @@
 		914701631E6D8F8A006A9ECA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701621E6D8F8A006A9ECA /* MenuViewController.swift */; };
 		914701651E6D8FBF006A9ECA /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701641E6D8FBF006A9ECA /* MenuTableViewCell.swift */; };
 		914701671E6D96BD006A9ECA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701661E6D96BD006A9ECA /* MenuItem.swift */; };
+		915ADA921E85543E0028CED9 /* SyncFileToiCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915ADA911E85543E0028CED9 /* SyncFileToiCloud.swift */; };
+		915ADA941E8559550028CED9 /* iCloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915ADA931E8559550028CED9 /* iCloud.storyboard */; };
+		915ADA971E855F300028CED9 /* HYc1gj.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 915ADA961E855F300028CED9 /* HYc1gj.ttf */; };
+		915ADA991E8563090028CED9 /* DownloadiCloudDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915ADA981E8563090028CED9 /* DownloadiCloudDataViewController.swift */; };
+		915ADA9B1E8568B40028CED9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915ADA9A1E8568B40028CED9 /* Constant.swift */; };
+		91A07BDA1E86912500CD19C3 /* WeChatActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701531E68708A006A9ECA /* WeChatActivity.swift */; };
+		91A07BDB1E86912500CD19C3 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCA61E3C307200D41E3C /* InputViewController.swift */; };
+		91A07BDC1E86912500CD19C3 /* ThingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E831E58826C00582C00 /* ThingItem.swift */; };
+		91A07BDD1E86912500CD19C3 /* SyncFileToiCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915ADA911E85543E0028CED9 /* SyncFileToiCloud.swift */; };
+		91A07BDE1E86912500CD19C3 /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E811E587F6E00582C00 /* HomeStore.swift */; };
+		91A07BDF1E86912500CD19C3 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E871E58923800582C00 /* UITableViewExtension.swift */; };
+		91A07BE01E86912500CD19C3 /* DownloadiCloudDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915ADA981E8563090028CED9 /* DownloadiCloudDataViewController.swift */; };
+		91A07BE11E86912500CD19C3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B0E1E6EF9A900AE0393 /* SettingViewController.swift */; };
+		91A07BE21E86912500CD19C3 /* ShareConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701551E68726C006A9ECA /* ShareConfig.swift */; };
+		91A07BE31E86912500CD19C3 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B0C1E6EF95A00AE0393 /* SettingTableViewCell.swift */; };
+		91A07BE41E86912500CD19C3 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910D0C1F1E60223B00605488 /* ShareViewController.swift */; };
+		91A07BE51E86912500CD19C3 /* InputStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCB11E3D73B100D41E3C /* InputStore.swift */; };
+		91A07BE61E86912500CD19C3 /* ShareModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910D0C211E646E0600605488 /* ShareModelViewController.swift */; };
+		91A07BE71E86912500CD19C3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCCF1E416D7700D41E3C /* R.generated.swift */; };
+		91A07BE81E86912500CD19C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BC571E3B81D100D41E3C /* AppDelegate.swift */; };
+		91A07BE91E86912500CD19C3 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B101E6EFEB800AE0393 /* SettingItem.swift */; };
+		91A07BEA1E86912500CD19C3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B121E702AD200AE0393 /* UserDefaults.swift */; };
+		91A07BEB1E86912500CD19C3 /* LicenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B231E72D72700AE0393 /* LicenseItem.swift */; };
+		91A07BEC1E86912500CD19C3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701621E6D8F8A006A9ECA /* MenuViewController.swift */; };
+		91A07BED1E86912500CD19C3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915ADA9A1E8568B40028CED9 /* Constant.swift */; };
+		91A07BEE1E86912500CD19C3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B1A1E703F6E00AE0393 /* LaunchViewController.swift */; };
+		91A07BEF1E86912500CD19C3 /* LaunchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E7F1E56759E00582C00 /* LaunchStore.swift */; };
+		91A07BF01E86912500CD19C3 /* TableViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B141E70333F00AE0393 /* TableViewCell+Rx.swift */; };
+		91A07BF11E86912500CD19C3 /* ThreeThingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCB31E4040C100D41E3C /* ThreeThingsModel.swift */; };
+		91A07BF21E86912500CD19C3 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B211E72D6CF00AE0393 /* LicenseViewController.swift */; };
+		91A07BF31E86912500CD19C3 /* LicenseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */; };
+		91A07BF41E86912500CD19C3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701641E6D8FBF006A9ECA /* MenuTableViewCell.swift */; };
+		91A07BF51E86912500CD19C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F101411E56712F00A9063D /* HomeViewController.swift */; };
+		91A07BF61E86912500CD19C3 /* RxAnimatableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F100B41E5049DE00A9063D /* RxAnimatableTextView.swift */; };
+		91A07BF71E86912500CD19C3 /* HomeThingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91314E851E58919D00582C00 /* HomeThingTableViewCell.swift */; };
+		91A07BF81E86912500CD19C3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914701661E6D96BD006A9ECA /* MenuItem.swift */; };
+		91A07BF91E86912500CD19C3 /* LicenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */; };
+		91A07BFB1E86912500CD19C3 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91311B161E703C7600AE0393 /* LocalAuthentication.framework */; };
+		91A07BFE1E86912500CD19C3 /* Home.clr in Resources */ = {isa = PBXBuildFile; fileRef = 910B9A771E5DE14E00D59B15 /* Home.clr */; };
+		91A07BFF1E86912500CD19C3 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91311B181E703F2B00AE0393 /* Launch.storyboard */; };
+		91A07C001E86912500CD19C3 /* Share.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9147015F1E687828006A9ECA /* Share.storyboard */; };
+		91A07C011E86912500CD19C3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F100F31E53CAAB00A9063D /* Home.storyboard */; };
+		91A07C031E86912500CD19C3 /* Template.html in Resources */ = {isa = PBXBuildFile; fileRef = 910D0C1A1E60204400605488 /* Template.html */; };
+		91A07C041E86912500CD19C3 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91311B0A1E6EF0DF00AE0393 /* Setting.storyboard */; };
+		91A07C051E86912500CD19C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C3BC601E3B81D100D41E3C /* LaunchScreen.storyboard */; };
+		91A07C071E86912500CD19C3 /* iCloud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915ADA931E8559550028CED9 /* iCloud.storyboard */; };
+		91A07C081E86912500CD19C3 /* HYc1gj.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 915ADA961E855F300028CED9 /* HYc1gj.ttf */; };
+		91A07C091E86912500CD19C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C3BC5E1E3B81D100D41E3C /* Assets.xcassets */; };
+		91A07C0A1E86912500CD19C3 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C3BC5B1E3B81D100D41E3C /* Input.storyboard */; };
+		91A07C0B1E86912500CD19C3 /* License.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91311B1F1E72D61200AE0393 /* License.storyboard */; };
+		91A07C441E869C3900CD19C3 /* SynciCluodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A07C351E869C3900CD19C3 /* SynciCluodSpec.swift */; };
+		91A07C451E869C3900CD19C3 /* LaunchStoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A07C361E869C3900CD19C3 /* LaunchStoreSpec.swift */; };
+		91A07C461E869C3900CD19C3 /* NilData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 91A07C381E869C3900CD19C3 /* NilData.realm */; };
+		91A07C4A1E869C3900CD19C3 /* OneData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 91A07C3D1E869C3900CD19C3 /* OneData.realm */; };
+		91A07C4F1E869C3900CD19C3 /* UnfinishedData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 91A07C431E869C3900CD19C3 /* UnfinishedData.realm */; };
+		91A07C511E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A07C501E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift */; };
+		91A07C521E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A07C501E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift */; };
+		91A07C531E86B4AF00CD19C3 /* NilData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 91A07C381E869C3900CD19C3 /* NilData.realm */; };
+		91A07C541E86B4AF00CD19C3 /* OneData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 91A07C3D1E869C3900CD19C3 /* OneData.realm */; };
+		91A07C551E86B4AF00CD19C3 /* UnfinishedData.realm in Resources */ = {isa = PBXBuildFile; fileRef = 91A07C431E869C3900CD19C3 /* UnfinishedData.realm */; };
+		91A07C591E86B9D600CD19C3 /* DownloadiCloudDataStoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A07C581E86B9D600CD19C3 /* DownloadiCloudDataStoreSpec.swift */; };
+		91A07C5F1E87E5DA00CD19C3 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A07C5E1E87E5DA00CD19C3 /* HUD.swift */; };
+		91A07C601E87E5DA00CD19C3 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A07C5E1E87E5DA00CD19C3 /* HUD.swift */; };
 		91C3BC581E3B81D100D41E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BC571E3B81D100D41E3C /* AppDelegate.swift */; };
 		91C3BC5D1E3B81D100D41E3C /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C3BC5B1E3B81D100D41E3C /* Input.storyboard */; };
 		91C3BC5F1E3B81D100D41E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C3BC5E1E3B81D100D41E3C /* Assets.xcassets */; };
 		91C3BC621E3B81D100D41E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C3BC601E3B81D100D41E3C /* LaunchScreen.storyboard */; };
 		91C3BCA71E3C307200D41E3C /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCA61E3C307200D41E3C /* InputViewController.swift */; };
-		91C3BCAC1E3CD86200D41E3C /* kai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91C3BCAB1E3CD86200D41E3C /* kai.ttf */; };
 		91C3BCB21E3D73B100D41E3C /* InputStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCB11E3D73B100D41E3C /* InputStore.swift */; };
 		91C3BCB41E4040C100D41E3C /* ThreeThingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCB31E4040C100D41E3C /* ThreeThingsModel.swift */; };
 		91C3BCD01E416D7700D41E3C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3BCCF1E416D7700D41E3C /* R.generated.swift */; };
 		91F100B51E5049DE00A9063D /* RxAnimatableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F100B41E5049DE00A9063D /* RxAnimatableTextView.swift */; };
 		91F100F41E53CAAB00A9063D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F100F31E53CAAB00A9063D /* Home.storyboard */; };
 		91F101421E56712F00A9063D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F101411E56712F00A9063D /* HomeViewController.swift */; };
+		F493B92907D8F286CFF84687 /* Pods_ThreeThingsBeta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA58EF470D97F7F50C2449A7 /* Pods_ThreeThingsBeta.framework */; };
+		F878A482A2F4D720D480FFED /* Pods_ThreeThingsBeta_ThreeThingsBetaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CE0A4AA2A41C112EB62BFB /* Pods_ThreeThingsBeta_ThreeThingsBetaTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		91A07C301E869C1600CD19C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C3BC4C1E3B81D100D41E3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91A07BD61E86912500CD19C3;
+			remoteInfo = ThreeThingsBeta;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		4B537C3CCF80069477858840 /* Pods-ThreeThings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThings/Pods-ThreeThings.debug.xcconfig"; sourceTree = "<group>"; };
-		8B72589F828D075C538C7DFA /* Pods-ThreeThings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThings.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThings/Pods-ThreeThings.release.xcconfig"; sourceTree = "<group>"; };
-		8BCB4EAE370C0B3D51FD5201 /* Pods_ThreeThings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeThings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		910B9A771E5DE14E00D59B15 /* Home.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Home.clr; sourceTree = SOURCE_ROOT; };
+		2AD845794195E1A80DCDB7A3 /* Pods-ThreeThingsBeta-ThreeThingsBetaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThingsBeta-ThreeThingsBetaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThingsBeta-ThreeThingsBetaTests/Pods-ThreeThingsBeta-ThreeThingsBetaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C521B2194B90F1C9358F77F /* Pods-ThreeThings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThings.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThings/Pods-ThreeThings.release.xcconfig"; sourceTree = "<group>"; };
+		31F5A1DB784443629AB8CF73 /* Pods_ThreeThings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeThings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3622F41A411A9C2861901C52 /* Pods-ThreeThingsBeta-ThreeThingsBetaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThingsBeta-ThreeThingsBetaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThingsBeta-ThreeThingsBetaTests/Pods-ThreeThingsBeta-ThreeThingsBetaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5123979337AC6DC5FE6851B7 /* Pods-ThreeThingsBeta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThingsBeta.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThingsBeta/Pods-ThreeThingsBeta.release.xcconfig"; sourceTree = "<group>"; };
+		8427D5723ECE1301BB1A747C /* Pods-ThreeThings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThings/Pods-ThreeThings.debug.xcconfig"; sourceTree = "<group>"; };
+		910B9A771E5DE14E00D59B15 /* Home.clr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Home.clr; sourceTree = "<group>"; };
 		910D0C1A1E60204400605488 /* Template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Template.html; sourceTree = "<group>"; };
 		910D0C1F1E60223B00605488 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		910D0C211E646E0600605488 /* ShareModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModelViewController.swift; sourceTree = "<group>"; };
@@ -73,12 +150,11 @@
 		91311B231E72D72700AE0393 /* LicenseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseItem.swift; sourceTree = "<group>"; };
 		91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseTableViewCell.swift; sourceTree = "<group>"; };
 		91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseWebViewController.swift; sourceTree = "<group>"; };
-		91314E7F1E56759E00582C00 /* LaunchStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchStore.swift; path = Home/LaunchStore.swift; sourceTree = "<group>"; };
+		91314E7F1E56759E00582C00 /* LaunchStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchStore.swift; sourceTree = "<group>"; };
 		91314E811E587F6E00582C00 /* HomeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
 		91314E831E58826C00582C00 /* ThingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingItem.swift; sourceTree = "<group>"; };
 		91314E851E58919D00582C00 /* HomeThingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeThingTableViewCell.swift; sourceTree = "<group>"; };
 		91314E871E58923800582C00 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
-		914701521E67943B006A9ECA /* ThreeThingsBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeThingsBridgingHeader.h; sourceTree = "<group>"; };
 		914701531E68708A006A9ECA /* WeChatActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatActivity.swift; sourceTree = "<group>"; };
 		914701551E68726C006A9ECA /* ShareConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareConfig.swift; sourceTree = "<group>"; };
 		9147015B1E6877E8006A9ECA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Input.storyboard"; sourceTree = "<group>"; };
@@ -87,12 +163,29 @@
 		914701621E6D8F8A006A9ECA /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		914701641E6D8FBF006A9ECA /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		914701661E6D96BD006A9ECA /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		915ADA8D1E81790B0028CED9 /* ThreeThings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThreeThings.entitlements; sourceTree = "<group>"; };
+		915ADA911E85543E0028CED9 /* SyncFileToiCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncFileToiCloud.swift; sourceTree = "<group>"; };
+		915ADA931E8559550028CED9 /* iCloud.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iCloud.storyboard; sourceTree = "<group>"; };
+		915ADA961E855F300028CED9 /* HYc1gj.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HYc1gj.ttf; sourceTree = "<group>"; };
+		915ADA981E8563090028CED9 /* DownloadiCloudDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadiCloudDataViewController.swift; sourceTree = "<group>"; };
+		915ADA9A1E8568B40028CED9 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		91A07C121E86912500CD19C3 /* ThreeThingsBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeThingsBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A07C131E86912600CD19C3 /* ThreeThingsBeta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ThreeThingsBeta.plist; path = /Users/xuemincai/code/ThreeThings/ThreeThingsBeta.plist; sourceTree = "<absolute>"; };
+		91A07C2B1E869C1600CD19C3 /* ThreeThingsBetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeThingsBetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A07C2F1E869C1600CD19C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91A07C351E869C3900CD19C3 /* SynciCluodSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynciCluodSpec.swift; sourceTree = "<group>"; };
+		91A07C361E869C3900CD19C3 /* LaunchStoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchStoreSpec.swift; sourceTree = "<group>"; };
+		91A07C381E869C3900CD19C3 /* NilData.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = NilData.realm; sourceTree = "<group>"; };
+		91A07C3D1E869C3900CD19C3 /* OneData.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = OneData.realm; sourceTree = "<group>"; };
+		91A07C431E869C3900CD19C3 /* UnfinishedData.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnfinishedData.realm; sourceTree = "<group>"; };
+		91A07C501E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadiCloudDataStore.swift; sourceTree = "<group>"; };
+		91A07C581E86B9D600CD19C3 /* DownloadiCloudDataStoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadiCloudDataStoreSpec.swift; sourceTree = "<group>"; };
+		91A07C5E1E87E5DA00CD19C3 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		91C3BC541E3B81D100D41E3C /* ThreeThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C3BC571E3B81D100D41E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C3BC5E1E3B81D100D41E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91C3BC631E3B81D100D41E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C3BCA61E3C307200D41E3C /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
-		91C3BCAB1E3CD86200D41E3C /* kai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = kai.ttf; path = ../../../../Downloads/hanyi43/kai.ttf; sourceTree = "<group>"; };
 		91C3BCB11E3D73B100D41E3C /* InputStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputStore.swift; sourceTree = "<group>"; };
 		91C3BCB31E4040C100D41E3C /* ThreeThingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeThingsModel.swift; sourceTree = "<group>"; };
 		91C3BCBD1E40BC5100D41E3C /* ThreeThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeThingsUITests.swift; sourceTree = "<group>"; };
@@ -101,15 +194,36 @@
 		91F100B41E5049DE00A9063D /* RxAnimatableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAnimatableTextView.swift; sourceTree = "<group>"; };
 		91F100F31E53CAAB00A9063D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		91F101411E56712F00A9063D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C32902F67A9FD31F3D786716 /* Pods_ThreeThingsBeta_ThreeThingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeThingsBeta_ThreeThingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9CE0A4AA2A41C112EB62BFB /* Pods_ThreeThingsBeta_ThreeThingsBetaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeThingsBeta_ThreeThingsBetaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71F3F7A63DDB29B9C461BB7 /* Pods-ThreeThingsBeta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeThingsBeta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeThingsBeta/Pods-ThreeThingsBeta.debug.xcconfig"; sourceTree = "<group>"; };
+		FA58EF470D97F7F50C2449A7 /* Pods_ThreeThingsBeta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeThingsBeta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		91A07BFA1E86912500CD19C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A07BFB1E86912500CD19C3 /* LocalAuthentication.framework in Frameworks */,
+				F493B92907D8F286CFF84687 /* Pods_ThreeThingsBeta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91A07C281E869C1600CD19C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F878A482A2F4D720D480FFED /* Pods_ThreeThingsBeta_ThreeThingsBetaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C3BC511E3B81D100D41E3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91311B171E703C7700AE0393 /* LocalAuthentication.framework in Frameworks */,
-				5D6EBCC44D6CCB00A253650A /* Pods_ThreeThings.framework in Frameworks */,
+				029A6AB2F9F8FD123BD03566 /* Pods_ThreeThings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,63 +235,135 @@
 			children = (
 				910B9A771E5DE14E00D59B15 /* Home.clr */,
 			);
-			name = Colors;
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		910D0C1C1E60217400605488 /* Share */ = {
 			isa = PBXGroup;
 			children = (
-				914701531E68708A006A9ECA /* WeChatActivity.swift */,
-				910D0C1A1E60204400605488 /* Template.html */,
 				9147015F1E687828006A9ECA /* Share.storyboard */,
-				910D0C1F1E60223B00605488 /* ShareViewController.swift */,
-				910D0C211E646E0600605488 /* ShareModelViewController.swift */,
 				914701551E68726C006A9ECA /* ShareConfig.swift */,
+				910D0C211E646E0600605488 /* ShareModelViewController.swift */,
+				910D0C1F1E60223B00605488 /* ShareViewController.swift */,
+				910D0C1A1E60204400605488 /* Template.html */,
+				914701531E68708A006A9ECA /* WeChatActivity.swift */,
 			);
-			name = Share;
+			path = Share;
 			sourceTree = "<group>";
 		};
 		91311B091E6EF0C600AE0393 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
 				91311B0A1E6EF0DF00AE0393 /* Setting.storyboard */,
+				91311B101E6EFEB800AE0393 /* SettingItem.swift */,
 				91311B0C1E6EF95A00AE0393 /* SettingTableViewCell.swift */,
 				91311B0E1E6EF9A900AE0393 /* SettingViewController.swift */,
-				91311B101E6EFEB800AE0393 /* SettingItem.swift */,
 			);
-			name = Setting;
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		91311B1C1E703FD000AE0393 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				91311B1A1E703F6E00AE0393 /* LaunchViewController.swift */,
-				91314E7F1E56759E00582C00 /* LaunchStore.swift */,
 				91311B181E703F2B00AE0393 /* Launch.storyboard */,
+				91314E7F1E56759E00582C00 /* LaunchStore.swift */,
+				91311B1A1E703F6E00AE0393 /* LaunchViewController.swift */,
 			);
-			name = Launch;
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		91311B1E1E72D5D600AE0393 /* License */ = {
 			isa = PBXGroup;
 			children = (
 				91311B1F1E72D61200AE0393 /* License.storyboard */,
-				91311B211E72D6CF00AE0393 /* LicenseViewController.swift */,
 				91311B231E72D72700AE0393 /* LicenseItem.swift */,
 				91311B281E72DD1600AE0393 /* LicenseTableViewCell.swift */,
+				91311B211E72D6CF00AE0393 /* LicenseViewController.swift */,
 				91311B2A1E72E7F200AE0393 /* LicenseWebViewController.swift */,
 			);
-			name = License;
+			path = License;
+			sourceTree = "<group>";
+		};
+		915ADA901E8554250028CED9 /* iCloudSync */ = {
+			isa = PBXGroup;
+			children = (
+				91A07C501E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift */,
+				915ADA981E8563090028CED9 /* DownloadiCloudDataViewController.swift */,
+				915ADA911E85543E0028CED9 /* SyncFileToiCloud.swift */,
+				915ADA931E8559550028CED9 /* iCloud.storyboard */,
+			);
+			path = iCloudSync;
+			sourceTree = "<group>";
+		};
+		915ADA951E855F300028CED9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				915ADA961E855F300028CED9 /* HYc1gj.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		91A07C2C1E869C1600CD19C3 /* ThreeThingsBetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				91A07C371E869C3900CD19C3 /* TestRealmData */,
+				91A07C581E86B9D600CD19C3 /* DownloadiCloudDataStoreSpec.swift */,
+				91A07C2F1E869C1600CD19C3 /* Info.plist */,
+				91A07C361E869C3900CD19C3 /* LaunchStoreSpec.swift */,
+				91A07C351E869C3900CD19C3 /* SynciCluodSpec.swift */,
+			);
+			path = ThreeThingsBetaTests;
+			sourceTree = "<group>";
+		};
+		91A07C371E869C3900CD19C3 /* TestRealmData */ = {
+			isa = PBXGroup;
+			children = (
+				91A07C381E869C3900CD19C3 /* NilData.realm */,
+				91A07C3D1E869C3900CD19C3 /* OneData.realm */,
+				91A07C431E869C3900CD19C3 /* UnfinishedData.realm */,
+			);
+			path = TestRealmData;
+			sourceTree = "<group>";
+		};
+		91A07C5B1E87DF3900CD19C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91F100B41E5049DE00A9063D /* RxAnimatableTextView.swift */,
+				91311B141E70333F00AE0393 /* TableViewCell+Rx.swift */,
+				91314E871E58923800582C00 /* UITableViewExtension.swift */,
+				91A07C5E1E87E5DA00CD19C3 /* HUD.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		91A07C5C1E87DF6D00CD19C3 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				915ADA9A1E8568B40028CED9 /* Constant.swift */,
+				91C3BCCF1E416D7700D41E3C /* R.generated.swift */,
+				91311B121E702AD200AE0393 /* UserDefaults.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		91A07C5D1E87DF8800CD19C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91C3BCB31E4040C100D41E3C /* ThreeThingsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		91C3BC4B1E3B81D100D41E3C = {
 			isa = PBXGroup;
 			children = (
 				CA62D1CBDD5A38982CA43D5C /* Frameworks */,
-				FB237C71C87F5971065A04DD /* Pods */,
+				944A37E1FAE9913E8CF0CED1 /* Pods */,
 				91C3BC551E3B81D100D41E3C /* Products */,
 				91C3BC561E3B81D100D41E3C /* ThreeThings */,
+				91A07C2C1E869C1600CD19C3 /* ThreeThingsBetaTests */,
 				91C3BCBC1E40BC5100D41E3C /* ThreeThingsUITests */,
+				91A07C131E86912600CD19C3 /* ThreeThingsBeta.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +371,8 @@
 			isa = PBXGroup;
 			children = (
 				91C3BC541E3B81D100D41E3C /* ThreeThings.app */,
+				91A07C121E86912500CD19C3 /* ThreeThingsBeta.app */,
+				91A07C2B1E869C1600CD19C3 /* ThreeThingsBetaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,25 +380,23 @@
 		91C3BC561E3B81D100D41E3C /* ThreeThings */ = {
 			isa = PBXGroup;
 			children = (
-				91311B1E1E72D5D600AE0393 /* License */,
-				91311B1C1E703FD000AE0393 /* Launch */,
-				91311B091E6EF0C600AE0393 /* Setting */,
-				910D0C1C1E60217400605488 /* Share */,
 				910B9A761E5DE11C00D59B15 /* Colors */,
+				91A07C5C1E87DF6D00CD19C3 /* Constant */,
+				91A07C5B1E87DF3900CD19C3 /* Extension */,
+				915ADA951E855F300028CED9 /* Font */,
 				91F100F21E53CA9100A9063D /* Home */,
 				91C3BCA51E3C305D00D41E3C /* Input */,
-				91C3BCA81E3CD83D00D41E3C /* TTF */,
+				91311B1C1E703FD000AE0393 /* Launch */,
+				91311B1E1E72D5D600AE0393 /* License */,
+				91A07C5D1E87DF8800CD19C3 /* Model */,
+				91311B091E6EF0C600AE0393 /* Setting */,
+				910D0C1C1E60217400605488 /* Share */,
+				915ADA901E8554250028CED9 /* iCloudSync */,
 				91C3BC571E3B81D100D41E3C /* AppDelegate.swift */,
 				91C3BC5E1E3B81D100D41E3C /* Assets.xcassets */,
 				91C3BC631E3B81D100D41E3C /* Info.plist */,
 				91C3BC601E3B81D100D41E3C /* LaunchScreen.storyboard */,
-				91C3BCCF1E416D7700D41E3C /* R.generated.swift */,
-				91F100B41E5049DE00A9063D /* RxAnimatableTextView.swift */,
-				91314E871E58923800582C00 /* UITableViewExtension.swift */,
-				91C3BCB31E4040C100D41E3C /* ThreeThingsModel.swift */,
-				914701521E67943B006A9ECA /* ThreeThingsBridgingHeader.h */,
-				91311B121E702AD200AE0393 /* UserDefaults.swift */,
-				91311B141E70333F00AE0393 /* TableViewCell+Rx.swift */,
+				915ADA8D1E81790B0028CED9 /* ThreeThings.entitlements */,
 			);
 			path = ThreeThings;
 			sourceTree = "<group>";
@@ -223,14 +409,6 @@
 				91C3BCA61E3C307200D41E3C /* InputViewController.swift */,
 			);
 			path = Input;
-			sourceTree = "<group>";
-		};
-		91C3BCA81E3CD83D00D41E3C /* TTF */ = {
-			isa = PBXGroup;
-			children = (
-				91C3BCAB1E3CD86200D41E3C /* kai.ttf */,
-			);
-			path = TTF;
 			sourceTree = "<group>";
 		};
 		91C3BCBC1E40BC5100D41E3C /* ThreeThingsUITests */ = {
@@ -246,49 +424,98 @@
 			isa = PBXGroup;
 			children = (
 				91F100F31E53CAAB00A9063D /* Home.storyboard */,
-				91F101411E56712F00A9063D /* HomeViewController.swift */,
 				91314E811E587F6E00582C00 /* HomeStore.swift */,
-				91314E831E58826C00582C00 /* ThingItem.swift */,
 				91314E851E58919D00582C00 /* HomeThingTableViewCell.swift */,
-				914701621E6D8F8A006A9ECA /* MenuViewController.swift */,
-				914701641E6D8FBF006A9ECA /* MenuTableViewCell.swift */,
+				91F101411E56712F00A9063D /* HomeViewController.swift */,
 				914701661E6D96BD006A9ECA /* MenuItem.swift */,
+				914701641E6D8FBF006A9ECA /* MenuTableViewCell.swift */,
+				914701621E6D8F8A006A9ECA /* MenuViewController.swift */,
+				91314E831E58826C00582C00 /* ThingItem.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		944A37E1FAE9913E8CF0CED1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8427D5723ECE1301BB1A747C /* Pods-ThreeThings.debug.xcconfig */,
+				2C521B2194B90F1C9358F77F /* Pods-ThreeThings.release.xcconfig */,
+				F71F3F7A63DDB29B9C461BB7 /* Pods-ThreeThingsBeta.debug.xcconfig */,
+				5123979337AC6DC5FE6851B7 /* Pods-ThreeThingsBeta.release.xcconfig */,
+				2AD845794195E1A80DCDB7A3 /* Pods-ThreeThingsBeta-ThreeThingsBetaTests.debug.xcconfig */,
+				3622F41A411A9C2861901C52 /* Pods-ThreeThingsBeta-ThreeThingsBetaTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CA62D1CBDD5A38982CA43D5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				91311B161E703C7600AE0393 /* LocalAuthentication.framework */,
-				8BCB4EAE370C0B3D51FD5201 /* Pods_ThreeThings.framework */,
+				31F5A1DB784443629AB8CF73 /* Pods_ThreeThings.framework */,
+				FA58EF470D97F7F50C2449A7 /* Pods_ThreeThingsBeta.framework */,
+				C32902F67A9FD31F3D786716 /* Pods_ThreeThingsBeta_ThreeThingsTests.framework */,
+				D9CE0A4AA2A41C112EB62BFB /* Pods_ThreeThingsBeta_ThreeThingsBetaTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FB237C71C87F5971065A04DD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4B537C3CCF80069477858840 /* Pods-ThreeThings.debug.xcconfig */,
-				8B72589F828D075C538C7DFA /* Pods-ThreeThings.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		91A07BD61E86912500CD19C3 /* ThreeThingsBeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91A07C0F1E86912500CD19C3 /* Build configuration list for PBXNativeTarget "ThreeThingsBeta" */;
+			buildPhases = (
+				A8EE24721A5911B39AD91540 /* [CP] Check Pods Manifest.lock */,
+				91A07BD81E86912500CD19C3 /* ShellScript */,
+				91A07BD91E86912500CD19C3 /* Sources */,
+				91A07BFA1E86912500CD19C3 /* Frameworks */,
+				91A07BFD1E86912500CD19C3 /* Resources */,
+				CA281DAC280646EF55029081 /* [CP] Embed Pods Frameworks */,
+				0C97BC5A45BFFA914DB209C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeThingsBeta;
+			productName = ThreeThings;
+			productReference = 91A07C121E86912500CD19C3 /* ThreeThingsBeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91A07C2A1E869C1600CD19C3 /* ThreeThingsBetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91A07C321E869C1600CD19C3 /* Build configuration list for PBXNativeTarget "ThreeThingsBetaTests" */;
+			buildPhases = (
+				D848F8D01C9CA63BD1A18852 /* [CP] Check Pods Manifest.lock */,
+				91A07C271E869C1600CD19C3 /* Sources */,
+				91A07C281E869C1600CD19C3 /* Frameworks */,
+				91A07C291E869C1600CD19C3 /* Resources */,
+				3C6F3D42C96658D10BB59F8D /* [CP] Embed Pods Frameworks */,
+				F9C593DAA5B26CA197446000 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91A07C311E869C1600CD19C3 /* PBXTargetDependency */,
+			);
+			name = ThreeThingsBetaTests;
+			productName = ThreeThingsBetaTests;
+			productReference = 91A07C2B1E869C1600CD19C3 /* ThreeThingsBetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		91C3BC531E3B81D100D41E3C /* ThreeThings */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91C3BC661E3B81D100D41E3C /* Build configuration list for PBXNativeTarget "ThreeThings" */;
 			buildPhases = (
-				EFEEED54C4BF4BEAEA89E6A7 /* [CP] Check Pods Manifest.lock */,
+				1BA979A8B6663B9BA58282EF /* [CP] Check Pods Manifest.lock */,
 				91C3BCCE1E416C8000D41E3C /* ShellScript */,
 				91C3BC501E3B81D100D41E3C /* Sources */,
 				91C3BC511E3B81D100D41E3C /* Frameworks */,
 				91C3BC521E3B81D100D41E3C /* Resources */,
-				42F464A8F3E90F66121C6383 /* [CP] Embed Pods Frameworks */,
-				E97312229549CB3351F74241 /* [CP] Copy Pods Resources */,
+				0A6338C1D4BA8D0DDD88B166 /* [CP] Embed Pods Frameworks */,
+				C676A32C2537AA3B51BABD7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,10 +536,26 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = xuemincai;
 				TargetAttributes = {
+					91A07BD61E86912500CD19C3 = {
+						DevelopmentTeam = 46P362TLB2;
+					};
+					91A07C2A1E869C1600CD19C3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 91A07BD61E86912500CD19C3;
+					};
 					91C3BC531E3B81D100D41E3C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 46P362TLB2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -329,23 +572,58 @@
 			projectRoot = "";
 			targets = (
 				91C3BC531E3B81D100D41E3C /* ThreeThings */,
+				91A07BD61E86912500CD19C3 /* ThreeThingsBeta */,
+				91A07C2A1E869C1600CD19C3 /* ThreeThingsBetaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		91A07BFD1E86912500CD19C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A07C531E86B4AF00CD19C3 /* NilData.realm in Resources */,
+				91A07BFE1E86912500CD19C3 /* Home.clr in Resources */,
+				91A07BFF1E86912500CD19C3 /* Launch.storyboard in Resources */,
+				91A07C001E86912500CD19C3 /* Share.storyboard in Resources */,
+				91A07C551E86B4AF00CD19C3 /* UnfinishedData.realm in Resources */,
+				91A07C541E86B4AF00CD19C3 /* OneData.realm in Resources */,
+				91A07C011E86912500CD19C3 /* Home.storyboard in Resources */,
+				91A07C031E86912500CD19C3 /* Template.html in Resources */,
+				91A07C041E86912500CD19C3 /* Setting.storyboard in Resources */,
+				91A07C051E86912500CD19C3 /* LaunchScreen.storyboard in Resources */,
+				91A07C071E86912500CD19C3 /* iCloud.storyboard in Resources */,
+				91A07C081E86912500CD19C3 /* HYc1gj.ttf in Resources */,
+				91A07C091E86912500CD19C3 /* Assets.xcassets in Resources */,
+				91A07C0A1E86912500CD19C3 /* Input.storyboard in Resources */,
+				91A07C0B1E86912500CD19C3 /* License.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91A07C291E869C1600CD19C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A07C4F1E869C3900CD19C3 /* UnfinishedData.realm in Resources */,
+				91A07C4A1E869C3900CD19C3 /* OneData.realm in Resources */,
+				91A07C461E869C3900CD19C3 /* NilData.realm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C3BC521E3B81D100D41E3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				910B9A781E5DE14E00D59B15 /* Home.clr in Resources */,
 				91311B191E703F2B00AE0393 /* Launch.storyboard in Resources */,
-				91C3BCAC1E3CD86200D41E3C /* kai.ttf in Resources */,
 				9147015D1E687828006A9ECA /* Share.storyboard in Resources */,
 				91F100F41E53CAAB00A9063D /* Home.storyboard in Resources */,
 				910D0C1B1E60204400605488 /* Template.html in Resources */,
 				91311B0B1E6EF0DF00AE0393 /* Setting.storyboard in Resources */,
 				91C3BC621E3B81D100D41E3C /* LaunchScreen.storyboard in Resources */,
+				915ADA941E8559550028CED9 /* iCloud.storyboard in Resources */,
+				915ADA971E855F300028CED9 /* HYc1gj.ttf in Resources */,
 				91C3BC5F1E3B81D100D41E3C /* Assets.xcassets in Resources */,
 				91C3BC5D1E3B81D100D41E3C /* Input.storyboard in Resources */,
 				91311B201E72D61200AE0393 /* License.storyboard in Resources */,
@@ -355,7 +633,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42F464A8F3E90F66121C6383 /* [CP] Embed Pods Frameworks */ = {
+		0A6338C1D4BA8D0DDD88B166 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,20 +648,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeThings/Pods-ThreeThings-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		91C3BCCE1E416C8000D41E3C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"rswift\" \"$SRCROOT/ThreeThings\"";
-		};
-		E97312229549CB3351F74241 /* [CP] Copy Pods Resources */ = {
+		0C97BC5A45BFFA914DB209C0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,10 +660,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeThings/Pods-ThreeThings-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeThingsBeta/Pods-ThreeThingsBeta-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EFEEED54C4BF4BEAEA89E6A7 /* [CP] Check Pods Manifest.lock */ = {
+		1BA979A8B6663B9BA58282EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,9 +678,176 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		3C6F3D42C96658D10BB59F8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeThingsBeta-ThreeThingsBetaTests/Pods-ThreeThingsBeta-ThreeThingsBetaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A07BD81E86912500CD19C3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"rswift\" \"$SRCROOT/ThreeThings\"";
+		};
+		91C3BCCE1E416C8000D41E3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"rswift\" \"$SRCROOT/ThreeThings\"";
+		};
+		A8EE24721A5911B39AD91540 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C676A32C2537AA3B51BABD7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeThings/Pods-ThreeThings-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA281DAC280646EF55029081 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeThingsBeta/Pods-ThreeThingsBeta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D848F8D01C9CA63BD1A18852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C593DAA5B26CA197446000 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeThingsBeta-ThreeThingsBetaTests/Pods-ThreeThingsBeta-ThreeThingsBetaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		91A07BD91E86912500CD19C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A07BDA1E86912500CD19C3 /* WeChatActivity.swift in Sources */,
+				91A07BDB1E86912500CD19C3 /* InputViewController.swift in Sources */,
+				91A07BDC1E86912500CD19C3 /* ThingItem.swift in Sources */,
+				91A07BDD1E86912500CD19C3 /* SyncFileToiCloud.swift in Sources */,
+				91A07BDE1E86912500CD19C3 /* HomeStore.swift in Sources */,
+				91A07BDF1E86912500CD19C3 /* UITableViewExtension.swift in Sources */,
+				91A07BE01E86912500CD19C3 /* DownloadiCloudDataViewController.swift in Sources */,
+				91A07BE11E86912500CD19C3 /* SettingViewController.swift in Sources */,
+				91A07BE21E86912500CD19C3 /* ShareConfig.swift in Sources */,
+				91A07BE31E86912500CD19C3 /* SettingTableViewCell.swift in Sources */,
+				91A07BE41E86912500CD19C3 /* ShareViewController.swift in Sources */,
+				91A07BE51E86912500CD19C3 /* InputStore.swift in Sources */,
+				91A07BE61E86912500CD19C3 /* ShareModelViewController.swift in Sources */,
+				91A07BE71E86912500CD19C3 /* R.generated.swift in Sources */,
+				91A07BE81E86912500CD19C3 /* AppDelegate.swift in Sources */,
+				91A07C601E87E5DA00CD19C3 /* HUD.swift in Sources */,
+				91A07BE91E86912500CD19C3 /* SettingItem.swift in Sources */,
+				91A07BEA1E86912500CD19C3 /* UserDefaults.swift in Sources */,
+				91A07BEB1E86912500CD19C3 /* LicenseItem.swift in Sources */,
+				91A07BEC1E86912500CD19C3 /* MenuViewController.swift in Sources */,
+				91A07BED1E86912500CD19C3 /* Constant.swift in Sources */,
+				91A07BEE1E86912500CD19C3 /* LaunchViewController.swift in Sources */,
+				91A07BEF1E86912500CD19C3 /* LaunchStore.swift in Sources */,
+				91A07BF01E86912500CD19C3 /* TableViewCell+Rx.swift in Sources */,
+				91A07BF11E86912500CD19C3 /* ThreeThingsModel.swift in Sources */,
+				91A07BF21E86912500CD19C3 /* LicenseViewController.swift in Sources */,
+				91A07BF31E86912500CD19C3 /* LicenseWebViewController.swift in Sources */,
+				91A07BF41E86912500CD19C3 /* MenuTableViewCell.swift in Sources */,
+				91A07BF51E86912500CD19C3 /* HomeViewController.swift in Sources */,
+				91A07BF61E86912500CD19C3 /* RxAnimatableTextView.swift in Sources */,
+				91A07C521E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift in Sources */,
+				91A07BF71E86912500CD19C3 /* HomeThingTableViewCell.swift in Sources */,
+				91A07BF81E86912500CD19C3 /* MenuItem.swift in Sources */,
+				91A07BF91E86912500CD19C3 /* LicenseTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91A07C271E869C1600CD19C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A07C591E86B9D600CD19C3 /* DownloadiCloudDataStoreSpec.swift in Sources */,
+				91A07C441E869C3900CD19C3 /* SynciCluodSpec.swift in Sources */,
+				91A07C451E869C3900CD19C3 /* LaunchStoreSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C3BC501E3B81D100D41E3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,8 +855,10 @@
 				914701541E68708A006A9ECA /* WeChatActivity.swift in Sources */,
 				91C3BCA71E3C307200D41E3C /* InputViewController.swift in Sources */,
 				91314E841E58826C00582C00 /* ThingItem.swift in Sources */,
+				915ADA921E85543E0028CED9 /* SyncFileToiCloud.swift in Sources */,
 				91314E821E587F6E00582C00 /* HomeStore.swift in Sources */,
 				91314E881E58923800582C00 /* UITableViewExtension.swift in Sources */,
+				915ADA991E8563090028CED9 /* DownloadiCloudDataViewController.swift in Sources */,
 				91311B0F1E6EF9A900AE0393 /* SettingViewController.swift in Sources */,
 				914701561E68726C006A9ECA /* ShareConfig.swift in Sources */,
 				91311B0D1E6EF95A00AE0393 /* SettingTableViewCell.swift in Sources */,
@@ -433,10 +867,12 @@
 				910D0C221E646E0600605488 /* ShareModelViewController.swift in Sources */,
 				91C3BCD01E416D7700D41E3C /* R.generated.swift in Sources */,
 				91C3BC581E3B81D100D41E3C /* AppDelegate.swift in Sources */,
+				91A07C5F1E87E5DA00CD19C3 /* HUD.swift in Sources */,
 				91311B111E6EFEB800AE0393 /* SettingItem.swift in Sources */,
 				91311B131E702AD200AE0393 /* UserDefaults.swift in Sources */,
 				91311B241E72D72700AE0393 /* LicenseItem.swift in Sources */,
 				914701631E6D8F8A006A9ECA /* MenuViewController.swift in Sources */,
+				915ADA9B1E8568B40028CED9 /* Constant.swift in Sources */,
 				91311B1B1E703F6E00AE0393 /* LaunchViewController.swift in Sources */,
 				91314E801E56759E00582C00 /* LaunchStore.swift in Sources */,
 				91311B151E70333F00AE0393 /* TableViewCell+Rx.swift in Sources */,
@@ -446,6 +882,7 @@
 				914701651E6D8FBF006A9ECA /* MenuTableViewCell.swift in Sources */,
 				91F101421E56712F00A9063D /* HomeViewController.swift in Sources */,
 				91F100B51E5049DE00A9063D /* RxAnimatableTextView.swift in Sources */,
+				91A07C511E86A9FD00CD19C3 /* DownloadiCloudDataStore.swift in Sources */,
 				91314E861E58919D00582C00 /* HomeThingTableViewCell.swift in Sources */,
 				914701671E6D96BD006A9ECA /* MenuItem.swift in Sources */,
 				91311B291E72DD1600AE0393 /* LicenseTableViewCell.swift in Sources */,
@@ -454,6 +891,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		91A07C311E869C1600CD19C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91A07BD61E86912500CD19C3 /* ThreeThingsBeta */;
+			targetProxy = 91A07C301E869C1600CD19C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9147015F1E687828006A9ECA /* Share.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -461,6 +906,7 @@
 				9147015E1E687828006A9ECA /* zh-Hans */,
 			);
 			name = Share.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		91C3BC5B1E3B81D100D41E3C /* Input.storyboard */ = {
@@ -484,6 +930,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		91A07C101E86912500CD19C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71F3F7A63DDB29B9C461BB7 /* Pods-ThreeThingsBeta.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeThings/ThreeThings.entitlements;
+				DEVELOPMENT_TEAM = 46P362TLB2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ThreeThingsPods/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ThreeThingsBeta.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"DEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		91A07C111E86912500CD19C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5123979337AC6DC5FE6851B7 /* Pods-ThreeThingsBeta.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeThings/ThreeThings.entitlements;
+				DEVELOPMENT_TEAM = 46P362TLB2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ThreeThingsPods/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ThreeThingsBeta.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"DEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		91A07C331E869C1600CD19C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD845794195E1A80DCDB7A3 /* Pods-ThreeThingsBeta-ThreeThingsBetaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThreeThingsBetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xuemincai.ThreeThingsBetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeThingsBeta.app/ThreeThingsBeta";
+			};
+			name = Debug;
+		};
+		91A07C341E869C1600CD19C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3622F41A411A9C2861901C52 /* Pods-ThreeThingsBeta-ThreeThingsBetaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThreeThingsBetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xuemincai.ThreeThingsBetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeThingsBeta.app/ThreeThingsBeta";
+			};
+			name = Release;
+		};
 		91C3BC641E3B81D100D41E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -579,9 +1097,10 @@
 		};
 		91C3BC671E3B81D100D41E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B537C3CCF80069477858840 /* Pods-ThreeThings.debug.xcconfig */;
+			baseConfigurationReference = 8427D5723ECE1301BB1A747C /* Pods-ThreeThings.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeThings/ThreeThings.entitlements;
 				DEVELOPMENT_TEAM = 46P362TLB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,7 +1109,8 @@
 				INFOPLIST_FILE = ThreeThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"DEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
@@ -599,9 +1119,10 @@
 		};
 		91C3BC681E3B81D100D41E3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B72589F828D075C538C7DFA /* Pods-ThreeThings.release.xcconfig */;
+			baseConfigurationReference = 2C521B2194B90F1C9358F77F /* Pods-ThreeThings.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThreeThings/ThreeThings.entitlements;
 				DEVELOPMENT_TEAM = 46P362TLB2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -610,7 +1131,7 @@
 				INFOPLIST_FILE = ThreeThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings.beta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simcai.ThreeThings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
@@ -620,6 +1141,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		91A07C0F1E86912500CD19C3 /* Build configuration list for PBXNativeTarget "ThreeThingsBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91A07C101E86912500CD19C3 /* Debug */,
+				91A07C111E86912500CD19C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91A07C321E869C1600CD19C3 /* Build configuration list for PBXNativeTarget "ThreeThingsBetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91A07C331E869C1600CD19C3 /* Debug */,
+				91A07C341E869C1600CD19C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		91C3BC4F1E3B81D100D41E3C /* Build configuration list for PBXProject "ThreeThings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
