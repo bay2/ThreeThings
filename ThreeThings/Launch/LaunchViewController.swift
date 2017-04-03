@@ -13,16 +13,6 @@ import LocalAuthentication
 import IBAnimatable
 import RealmSwift
 
-func setDefaultRealmForUser(username: String) {
-    var config = Realm.Configuration()
-    
-    // Use the default directory, but replace the filename with the username
-    config.fileURL = config.fileURL!.deletingLastPathComponent()
-        .appendingPathComponent("\(username).realm")
-    
-    // Set this as the configuration used for the default Realm
-    Realm.Configuration.defaultConfiguration = config
-}
 
 
 class LaunchViewController: UIViewController {
@@ -35,7 +25,6 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setDefaultRealmForUser(username: "default")
         
         let setViewController: (UIViewController?) -> Void = { [unowned self] viewController in
             

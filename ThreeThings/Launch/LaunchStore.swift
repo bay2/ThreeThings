@@ -51,8 +51,7 @@ extension ReX.Getter where Store : LaunchStore {
     
     var lauchPage: Observable<UIViewController?> {
         
-        let noNeedSync = store.state.thingsInfo.asObservable()
-            .filter { $0.count > 0 }
+        return store.state.thingsInfo.asObservable()
             .flatMap { [unowned store = self.store] _ in store.state.pageInfo.asObservable() }
             .map { (model) -> UIViewController? in
                 
@@ -64,13 +63,7 @@ extension ReX.Getter where Store : LaunchStore {
             
             }
         
-        let needSync: Observable<UIViewController?> = store.state.thingsInfo.asObservable()
-            .filter { $0.count <= 0 }
-            .map { _ in R.storyboard.iCloud.downloadiCloudDataViewController() }
         
-        
-        return Observable.of(noNeedSync, needSync).merge()
-
     }
     
 }

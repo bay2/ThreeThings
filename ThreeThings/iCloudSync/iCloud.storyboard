@@ -27,21 +27,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1O-iu-N2T">
-                                <rect key="frame" x="30" y="100" width="315" height="305"/>
+                                <rect key="frame" x="30" y="100" width="315" height="324.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否从 iCloud 中导入数据？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV9-Mo-db5">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="68"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="79.5"/>
                                         <fontDescription key="fontDescription" name="HYc1gj" family="HYKaiTiJ" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yt-Q9-EsG">
-                                        <rect key="frame" x="142.5" y="269" width="30" height="36"/>
+                                        <rect key="frame" x="142.5" y="284.5" width="30" height="40"/>
                                         <fontDescription key="fontDescription" name="HYc1gj" family="HYKaiTiJ" pointSize="24"/>
                                         <state key="normal" title="否"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akk-Dr-fRp">
-                                        <rect key="frame" x="142.5" y="218" width="30" height="36"/>
+                                        <rect key="frame" x="142.5" y="229.5" width="30" height="40"/>
                                         <fontDescription key="fontDescription" name="HYc1gj" family="HYKaiTiJ" pointSize="24"/>
                                         <state key="normal" title="是"/>
                                     </button>
@@ -79,25 +79,43 @@
                                 </constraints>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g85-19-BI9">
-                                <rect key="frame" x="172" y="537" width="31" height="30"/>
+                                <rect key="frame" x="172" y="585.5" width="31" height="30"/>
                                 <state key="normal" title="跳过"/>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wm2-O7-Nob">
-                                <rect key="frame" x="30" y="205.5" width="315" height="57.5"/>
+                                <rect key="frame" x="30" y="122" width="315" height="224.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCloud 上不存在对应的数据文件" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eF-xX-92s">
-                                        <rect key="frame" x="0.0" y="0.5" width="315" height="57.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoFile" translatesAutoresizingMaskIntoConstraints="NO" id="lhZ-bJ-FKZ">
+                                        <rect key="frame" x="68.5" y="0.5" width="186" height="137"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eF-xX-92s">
+                                        <rect key="frame" x="0.0" y="167.5" width="315" height="57"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="iCloud ">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="24"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="上不存在对应的数据文件">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name=".PingFangSC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="3eF-xX-92s" secondAttribute="trailing" id="6id-1g-MLF"/>
-                                    <constraint firstAttribute="bottom" secondItem="3eF-xX-92s" secondAttribute="bottom" id="GP8-O7-OBg"/>
-                                    <constraint firstItem="3eF-xX-92s" firstAttribute="top" secondItem="wm2-O7-Nob" secondAttribute="top" id="Idu-HE-c5a"/>
-                                    <constraint firstItem="3eF-xX-92s" firstAttribute="leading" secondItem="wm2-O7-Nob" secondAttribute="leading" id="IvF-In-nzg"/>
+                                    <constraint firstAttribute="bottom" secondItem="3eF-xX-92s" secondAttribute="bottom" id="ISZ-JV-zGQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="3eF-xX-92s" secondAttribute="trailing" id="Nzp-bB-2fM"/>
+                                    <constraint firstItem="3eF-xX-92s" firstAttribute="top" secondItem="lhZ-bJ-FKZ" secondAttribute="bottom" constant="30" id="Z8Y-1M-Riw"/>
+                                    <constraint firstItem="3eF-xX-92s" firstAttribute="centerX" secondItem="wm2-O7-Nob" secondAttribute="centerX" id="bQ3-FR-fFA"/>
+                                    <constraint firstItem="lhZ-bJ-FKZ" firstAttribute="top" secondItem="wm2-O7-Nob" secondAttribute="top" id="pgk-oY-JSB"/>
+                                    <constraint firstItem="3eF-xX-92s" firstAttribute="leading" secondItem="wm2-O7-Nob" secondAttribute="leading" id="s2g-QY-lPA"/>
+                                    <constraint firstItem="lhZ-bJ-FKZ" firstAttribute="centerX" secondItem="wm2-O7-Nob" secondAttribute="centerX" constant="4" id="vPb-Qg-e9u"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSI-kF-0qU">
@@ -134,6 +152,7 @@
                             <constraint firstItem="HKL-ZP-Smd" firstAttribute="top" secondItem="djL-3v-DPa" secondAttribute="top" constant="100" id="Gts-t4-o1W"/>
                             <constraint firstAttribute="trailing" secondItem="HKL-ZP-Smd" secondAttribute="trailing" constant="30" id="Ilb-eQ-e2e"/>
                             <constraint firstItem="i1O-iu-N2T" firstAttribute="leading" secondItem="djL-3v-DPa" secondAttribute="leading" constant="30" id="MYC-92-rer"/>
+                            <constraint firstItem="g85-19-BI9" firstAttribute="centerY" secondItem="djL-3v-DPa" secondAttribute="centerY" multiplier="1.8" id="VKS-gk-l5R"/>
                             <constraint firstAttribute="trailing" secondItem="lSI-kF-0qU" secondAttribute="trailing" constant="30" id="WLe-ai-S5j"/>
                             <constraint firstAttribute="trailing" secondItem="wm2-O7-Nob" secondAttribute="trailing" constant="30" id="ZWX-NG-IoZ"/>
                             <constraint firstItem="lSI-kF-0qU" firstAttribute="centerY" secondItem="djL-3v-DPa" secondAttribute="centerY" multiplier="0.8" id="g9Z-7w-GMN"/>
@@ -141,8 +160,14 @@
                             <constraint firstItem="g85-19-BI9" firstAttribute="centerX" secondItem="djL-3v-DPa" secondAttribute="centerX" id="mFs-6N-x2R"/>
                             <constraint firstItem="wm2-O7-Nob" firstAttribute="centerY" secondItem="djL-3v-DPa" secondAttribute="centerY" multiplier="0.7" id="o43-bc-686"/>
                             <constraint firstAttribute="trailing" secondItem="i1O-iu-N2T" secondAttribute="trailing" constant="30" id="oGP-Cv-pmE"/>
-                            <constraint firstItem="6NM-gg-d83" firstAttribute="top" secondItem="g85-19-BI9" secondAttribute="bottom" constant="100" id="wOt-PQ-vZ1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="i1O-iu-N2T"/>
+                                <exclude reference="HKL-ZP-Smd"/>
+                                <exclude reference="lSI-kF-0qU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
@@ -161,4 +186,7 @@
             <point key="canvasLocation" x="-456.80000000000001" y="201.04947526236884"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NoFile" width="186" height="137"/>
+    </resources>
 </document>

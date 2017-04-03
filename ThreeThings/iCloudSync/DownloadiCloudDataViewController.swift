@@ -11,6 +11,18 @@ import RxSwift
 import RxCocoa
 import RealmSwift
 
+func setDefaultRealmForUser(username: String) {
+    var config = Realm.Configuration()
+    
+    // Use the default directory, but replace the filename with the username
+    config.fileURL = config.fileURL!.deletingLastPathComponent()
+        .appendingPathComponent("\(username).realm")
+    
+    // Set this as the configuration used for the default Realm
+    Realm.Configuration.defaultConfiguration = config
+}
+
+
 extension Reactive where Base: UIView {
     
     var hidden: Observable<Bool> {

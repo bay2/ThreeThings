@@ -92,19 +92,19 @@ class LaunchStoreSpec: QuickSpec {
                 
             }
             
-            
-            it("Data is nil") {
-                
-                setDefaultRealmForUser(username: "NilData")
-                
-                let launchStore = LaunchStore()
-                
-                launchStore.getter.lauchPage.bindNext { (vc) in
-                    expect(vc?.className).to(equal(R.storyboard.iCloud.downloadiCloudDataViewController()?.className))
-                    }
-                    .addDisposableTo(self.disposeBag)
-                
-            }
+//            
+//            it("Data is nil") {
+//                
+//                setDefaultRealmForUser(username: "NilData")
+//                
+//                let launchStore = LaunchStore()
+//                
+//                launchStore.getter.lauchPage.bindNext { (vc) in
+//                    expect(vc?.className).to(equal(R.storyboard.iCloud.downloadiCloudDataViewController()?.className))
+//                    }
+//                    .addDisposableTo(self.disposeBag)
+//                
+//            }
             
 
         }

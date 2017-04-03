@@ -118,7 +118,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 9 images.
+  /// This `R.image` struct is generated, and contains static references to 10 images.
   struct image {
     /// Image `Close`.
     static let close = Rswift.ImageResource(bundle: R.hostingBundle, name: "Close")
@@ -126,6 +126,8 @@ struct R: Rswift.Validatable {
     static let launchImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "LaunchImage")
     /// Image `Launch`.
     static let launch = Rswift.ImageResource(bundle: R.hostingBundle, name: "Launch")
+    /// Image `NoFile`.
+    static let noFile = Rswift.ImageResource(bundle: R.hostingBundle, name: "NoFile")
     /// Image `back`.
     static let back = Rswift.ImageResource(bundle: R.hostingBundle, name: "back")
     /// Image `menu`.
@@ -152,6 +154,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "LaunchImage", bundle: ..., traitCollection: ...)`
     static func launchImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.launchImage, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "NoFile", bundle: ..., traitCollection: ...)`
+    static func noFile(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.noFile, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "back", bundle: ..., traitCollection: ...)`
@@ -354,6 +361,7 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "NoFile") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'NoFile' is used in storyboard 'iCloud', but couldn't be loaded.") }
         if _R.storyboard.iCloud().downloadiCloudDataViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'downloadiCloudDataViewController' could not be loaded from storyboard 'iCloud' as 'DownloadiCloudDataViewController'.") }
       }
       

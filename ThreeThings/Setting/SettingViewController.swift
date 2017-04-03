@@ -33,21 +33,7 @@ class SettingViewController: UIViewController {
         
         let sections: [SettingSection] = [
             .SwitchSection(items: [
-                .SwitchItem(title: "启动TouchID", isOn: UserDefaults.Setting.bool(forKey: .enableTouchID), setValue: { UserDefaults.Setting.set($0, forKey: .enableTouchID) }),
-                .TitleItem(title: "iCloud Drive 同步", click: {
-                    
-                    HUD.showLoading(true)
-                    self.sync(targetFile: realm.configuration.fileURL!) { (result) in
-                        if result == .success {
-                            
-                            HUD.showLoading(false)
-            
-                        } else {
-                            
-                        }
-                    }
-                    
-                })
+                .SwitchItem(title: "启动TouchID", isOn: UserDefaults.Setting.bool(forKey: .enableTouchID), setValue: { UserDefaults.Setting.set($0, forKey: .enableTouchID) })
                 ])
         ]
         
