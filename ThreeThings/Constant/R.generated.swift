@@ -11,7 +11,7 @@ import UIKit
 /// This `R` struct is generated and contains references to static resources.
 struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap(Locale.init) ?? Locale.current
-  fileprivate static let hostingBundle = Bundle(identifier: "com.simcai.ThreeThings.beta") ?? Bundle.main
+  fileprivate static let hostingBundle = Bundle(identifier: "com.simcai.ThreeThings") ?? Bundle.main
   
   static func validate() throws {
     try font.validate()
@@ -38,20 +38,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 6 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
     /// Resource file `HYc1gj.ttf`.
     static let hYc1gjTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "HYc1gj", pathExtension: "ttf")
     /// Resource file `Home.clr`.
     static let homeClr = Rswift.FileResource(bundle: R.hostingBundle, name: "Home", pathExtension: "clr")
-    /// Resource file `NilData.realm`.
-    static let nilDataRealm = Rswift.FileResource(bundle: R.hostingBundle, name: "NilData", pathExtension: "realm")
-    /// Resource file `OneData.realm`.
-    static let oneDataRealm = Rswift.FileResource(bundle: R.hostingBundle, name: "OneData", pathExtension: "realm")
     /// Resource file `Template.html`.
     static let templateHtml = Rswift.FileResource(bundle: R.hostingBundle, name: "Template", pathExtension: "html")
-    /// Resource file `UnfinishedData.realm`.
-    static let unfinishedDataRealm = Rswift.FileResource(bundle: R.hostingBundle, name: "UnfinishedData", pathExtension: "realm")
     
     /// `bundle.url(forResource: "HYc1gj", withExtension: "ttf")`
     static func hYc1gjTtf(_: Void = ()) -> Foundation.URL? {
@@ -65,27 +59,9 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
-    /// `bundle.url(forResource: "NilData", withExtension: "realm")`
-    static func nilDataRealm(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.nilDataRealm
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "OneData", withExtension: "realm")`
-    static func oneDataRealm(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.oneDataRealm
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
     /// `bundle.url(forResource: "Template", withExtension: "html")`
     static func templateHtml(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.templateHtml
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    /// `bundle.url(forResource: "UnfinishedData", withExtension: "realm")`
-    static func unfinishedDataRealm(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.unfinishedDataRealm
       return fileResource.bundle.url(forResource: fileResource)
     }
     
