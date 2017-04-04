@@ -13,7 +13,7 @@ import RxCocoa
 import RxDataSources
 import EZSwiftExtensions
 
-class MenuViewController: AnimatableViewController {
+class MenuViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     let disposeBag = DisposeBag()
@@ -30,16 +30,19 @@ class MenuViewController: AnimatableViewController {
         
         let sections: [MenuSection] = [
             .TitleSection(items: [
-                .TitleSectionItem(title: "清理缓存", click: { print("清理缓存") }),
                 .TitleSectionItem(title: "设置", click: { [unowned self] in
-                    guard let vc = R.storyboard.setting.settingNavgationController() else { fatalError("settingViewController is nil") }
-                    self.presentVC(vc)
+                    guard let vc = R.storyboard.setting.settingViewController() else { fatalError("settingViewController is nil") }
+                    self.pushVC(vc)
                 }),
                 .TitleSectionItem(title: "开源许可", click: { [unowned self] in
-                    guard let vc = R.storyboard.license.licenseNavgationController() else { fatalError("settingViewController is nil") }
-                    self.presentVC(vc)
+                    guard let vc = R.storyboard.license.licenseViewController() else { fatalError("settingViewController is nil") }
+                    self.pushVC(vc)
                 }),
-                .TitleSectionItem(title: "意见反馈", click: { print("意见反馈") })
+                .TitleSectionItem(title: "意见反馈", click: {
+                    
+                    UIApplication.shared.openURL(URL(string: Constant.sendEmail)!)
+                
+                })
                 ])
         ]
         

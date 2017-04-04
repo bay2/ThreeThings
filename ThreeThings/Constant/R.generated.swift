@@ -20,25 +20,16 @@ struct R: Rswift.Validatable {
   
   /// This `R.color` struct is generated, and contains static references to 1 color palettes.
   struct color {
-    /// This `R.color.home` struct is generated, and contains static references to 2 colors.
+    /// This `R.color.home` struct is generated, and contains static references to 1 colors.
     struct home {
-      /// <span style='background-color: #A7ABFE; color: #585401; padding: 1px 3px;'>#A7ABFE</span> Perano
-      static let perano = Rswift.ColorResource(name: "Perano", red: 0.656317949295044, green: 0.670383155345917, blue: 0.994123041629791, alpha: 1.0)
-      /// <span style='background-color: #D0D2FE; color: #2F2D01; padding: 1px 3px;'>#D0D2FE</span> Hawkes Blue
-      static let hawkesBlue = Rswift.ColorResource(name: "Hawkes Blue", red: 0.816222548484802, green: 0.824578642845154, blue: 0.994519591331482, alpha: 1.0)
+      /// <span style='background-color: #53C68F; color: #AC3970; padding: 1px 3px;'>#53C68F</span> Silver Tree
+      static let silverTree = Rswift.ColorResource(name: "Silver Tree", red: 0.325490206480026, green: 0.776470601558685, blue: 0.560784339904785, alpha: 1.0)
       
-      /// <span style='background-color: #A7ABFE; color: #585401; padding: 1px 3px;'>#A7ABFE</span> Perano
+      /// <span style='background-color: #53C68F; color: #AC3970; padding: 1px 3px;'>#53C68F</span> Silver Tree
       /// 
-      /// UIColor(red: 0.656317949295044, green: 0.670383155345917, blue: 0.994123041629791, alpha: 1.0)
-      static func perano(_: Void = ()) -> UIKit.UIColor {
-        return UIKit.UIColor(red: 0.656317949295044, green: 0.670383155345917, blue: 0.994123041629791, alpha: 1.0)
-      }
-      
-      /// <span style='background-color: #D0D2FE; color: #2F2D01; padding: 1px 3px;'>#D0D2FE</span> Hawkes Blue
-      /// 
-      /// UIColor(red: 0.816222548484802, green: 0.824578642845154, blue: 0.994519591331482, alpha: 1.0)
-      static func hawkesBlue(_: Void = ()) -> UIKit.UIColor {
-        return UIKit.UIColor(red: 0.816222548484802, green: 0.824578642845154, blue: 0.994519591331482, alpha: 1.0)
+      /// UIColor(red: 0.325490206480026, green: 0.776470601558685, blue: 0.560784339904785, alpha: 1.0)
+      static func silverTree(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 0.325490206480026, green: 0.776470601558685, blue: 0.560784339904785, alpha: 1.0)
       }
       
       fileprivate init() {}
@@ -118,8 +109,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 10 images.
+  /// This `R.image` struct is generated, and contains static references to 11 images.
   struct image {
+    /// Image `Back-1`.
+    static let back1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Back-1")
     /// Image `Close`.
     static let close = Rswift.ImageResource(bundle: R.hostingBundle, name: "Close")
     /// Image `LaunchImage`.
@@ -140,6 +133,11 @@ struct R: Rswift.Validatable {
     static let wechat_session = Rswift.ImageResource(bundle: R.hostingBundle, name: "wechat_session")
     /// Image `wechat_timeline`.
     static let wechat_timeline = Rswift.ImageResource(bundle: R.hostingBundle, name: "wechat_timeline")
+    
+    /// `UIImage(named: "Back-1", bundle: ..., traitCollection: ...)`
+    static func back1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.back1, compatibleWith: traitCollection)
+    }
     
     /// `UIImage(named: "Close", bundle: ..., traitCollection: ...)`
     static func close(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -342,7 +340,6 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "menu") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu' is used in storyboard 'Home', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "Close") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Close' is used in storyboard 'Home', but couldn't be loaded.") }
         if _R.storyboard.home().homeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewController' could not be loaded from storyboard 'Home' as 'HomeViewController'.") }
         if _R.storyboard.home().menuViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'menuViewController' could not be loaded from storyboard 'Home' as 'MenuViewController'.") }
         if _R.storyboard.home().homeNavigationController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeNavigationController' could not be loaded from storyboard 'Home' as 'UIKit.UINavigationController'.") }
@@ -436,6 +433,7 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "Back-1") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Back-1' is used in storyboard 'License', but couldn't be loaded.") }
         if _R.storyboard.license().licenseNavgationController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'licenseNavgationController' could not be loaded from storyboard 'License' as 'UIKit.UINavigationController'.") }
         if _R.storyboard.license().licenseViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'licenseViewController' could not be loaded from storyboard 'License' as 'LicenseViewController'.") }
         if _R.storyboard.license().licenseWebViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'licenseWebViewController' could not be loaded from storyboard 'License' as 'LicenseWebViewController'.") }
@@ -447,20 +445,15 @@ struct _R: Rswift.Validatable {
     struct setting: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "Setting"
-      let settingNavgationController = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "SettingNavgationController")
       let settingViewController = StoryboardViewControllerResource<SettingViewController>(identifier: "SettingViewController")
-      
-      func settingNavgationController(_: Void = ()) -> UIKit.UINavigationController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: settingNavgationController)
-      }
       
       func settingViewController(_: Void = ()) -> SettingViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: settingViewController)
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "Back-1") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Back-1' is used in storyboard 'Setting', but couldn't be loaded.") }
         if _R.storyboard.setting().settingViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'settingViewController' could not be loaded from storyboard 'Setting' as 'SettingViewController'.") }
-        if _R.storyboard.setting().settingNavgationController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'settingNavgationController' could not be loaded from storyboard 'Setting' as 'UIKit.UINavigationController'.") }
       }
       
       fileprivate init() {}

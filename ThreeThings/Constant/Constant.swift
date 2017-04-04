@@ -18,4 +18,6 @@ struct Constant {
     
     static let realmFileName = "default.realm"
     
+    static let sendEmail = "mailto:sim_cai@icloud.com"
+    
 }

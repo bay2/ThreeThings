@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,11 +28,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QWu-wr-fiV" id="uP9-l1-9Yy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TDV-28-Rb4">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -53,21 +53,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="开源许可" id="Pfr-wV-j9n">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="iqE-Wf-5gN">
+                        <barButtonItem key="leftBarButtonItem" image="Back-1" id="iqE-Wf-5gN">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="AAc-mR-asi" kind="custom" customClass="DismissSegue" customModule="IBAnimatable" id="Lr7-13-wmW"/>
+                                <action selector="back:" destination="f7R-2m-kaJ" id="ydE-ka-Fsm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="exZ-tr-88K" id="baq-1T-zLt"/>
+                        <segue destination="AaE-JG-fop" kind="show" id="XD8-Xf-zJN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GtV-i2-bor" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="288.30584707646182"/>
+            <point key="canvasLocation" x="634" y="295"/>
         </scene>
-        <!--License Web View Controller-->
+        <!--Title-->
         <scene sceneID="Str-9L-ex3">
             <objects>
                 <viewController storyboardIdentifier="LicenseWebViewController" id="AaE-JG-fop" customClass="LicenseWebViewController" customModule="ThreeThings" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,11 +78,11 @@
                         <viewControllerLayoutGuide type="bottom" id="sz9-rt-Dg8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fi0-Jc-DlC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleAspectFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jRc-Vd-fXs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
@@ -92,26 +94,25 @@
                             <constraint firstAttribute="trailing" secondItem="jRc-Vd-fXs" secondAttribute="trailing" id="Qev-i4-kYz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="RAU-Av-QjP">
+                        <barButtonItem key="leftBarButtonItem" image="Back-1" id="vyz-ed-9Jw">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="back:" destination="AaE-JG-fop" id="2YG-42-hvB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="jRc-Vd-fXs" id="nOS-Ke-QYc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNo-qM-aVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1431" y="295"/>
-        </scene>
-        <!--MenuViewController-->
-        <scene sceneID="UAU-wh-Eu0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="MenuViewController" id="AAc-mR-asi" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qS9-1i-GDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="682" y="-99"/>
+            <point key="canvasLocation" x="1337" y="295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cLZ-wg-2rM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y19-Gq-EmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="LicenseNavgationController" id="Z7A-Sl-bMe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -132,8 +133,12 @@
                         <segue destination="f7R-2m-kaJ" kind="relationship" relationship="rootViewController" id="bYn-PF-vGv"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y19-Gq-EmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68" y="295"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Back-1" width="11" height="20"/>
+    </resources>
 </document>

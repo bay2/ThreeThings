@@ -58,6 +58,10 @@ class LicenseViewController: UIViewController {
 
     }
 
+    @IBAction func back(_ sender: Any) {
+        popVC();
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

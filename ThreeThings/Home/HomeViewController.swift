@@ -104,11 +104,11 @@ class HomeViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventDefaultColorsFor date: Date) -> [UIColor]? {
-        return [R.color.home.perano()]
+        return [R.color.home.silverTree()]
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventSelectionColorsFor date: Date) -> [UIColor]? {
-        return [R.color.home.perano()]
+        return [R.color.home.silverTree()]
     }
 
 }

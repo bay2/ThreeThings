@@ -65,6 +65,10 @@ class SettingViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func back(_ sender: Any) {
+        popVC()
+    }
 
 }
 
