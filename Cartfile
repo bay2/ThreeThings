@@ -34,3 +34,4 @@ github "SwiftKitz/Datez" ~> 2.0.1
 github "goktugyil/EZSwiftExtensions" ~> 1.8
 github "RxSwiftCommunity/RxDataSources" ~> 1.0.2
 github "nixzhu/MonkeyKing" ~> 1.2.2
+github "realm/realm-cocoa" ~> 2.1
