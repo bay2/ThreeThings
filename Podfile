@@ -7,8 +7,6 @@ def ThreeThingsPod
 
   pod 'IBAnimatable', '~> 3.1.1'
   pod 'FSCalendar', '~> 2.7.1'
-  pod 'ThreeThingsPods', '~> 0.1.0'
-  pod 'RealmThreeThings'
 
 end
 
